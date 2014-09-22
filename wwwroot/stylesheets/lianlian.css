@@ -54,6 +54,12 @@ em > a:visited {
 	font-weight: normal;
 }
 
+.less-important,
+.less-important a:link,
+.less-important a:active,
+.less-important a:visited {
+	color: gray;
+}
 
 .right {
 	text-align: right;
@@ -192,6 +198,7 @@ article p {
 }
 
 .progress > ol {
+	font-size: 1rem;
 	counter-reset: step;
 
 	color: white;
@@ -202,150 +209,157 @@ article p {
 }
 
 .progress > ol > li {
+	list-style: none;
+	text-indent: 0;
 	counter-increment: step;
 
-	height: 100%;
-	list-style: none;
 	display: block;
-	text-indent: 0;
-	float: left;
+	height: 0.25em;
+
 	position: relative;
-
-}
-
-.progress > ol > li:before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 0.25rem;
-	position: absolute;
-	left: 0%;
 	top: 50%;
-	margin-top: -0.125rem;
-	z-index: 0;
+	margin-top: -0.125em;
+
+	float: left;
 }
 
+.progress > ol > li:before,
 .progress > ol > li:after {
 	display: block;
-	width: 1.5rem;
-	height: 1.5rem;
-
-	border-radius: 100%;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
 
 	text-align: center;
-	font-size: 1rem;
 
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -0.75rem;
 	margin-top: -0.75rem;
-
-	z-index: 1;
 }
 
-.progress > ol > li:first-child:before {
-	width: 50%;
-	left: auto;
-	right: 0;
+.progress > ol > li:before {
+	content: '';
+	border-radius: 50%;
+	z-index: 0;
+	background-color: inherit;
 }
 
-.progress > ol > li:last-child:before {
-	width: 50%;
-	left: 0;
-}
-
-.progress > ol > li:before,
-.progress > ol > li:after,
-.progress > ol > li[progress-step='current']:before,
-.progress > ol > li[progress-step='current']:after,
-.progress > ol > li[progress-step='completed']:before,
-.progress > ol > li[progress-step='completed']:after {
-	color: white;
-	background-color: #26ba81;
-}
-
-.progress > ol > li[progress-step='current'] ~ li:before,
-.progress > ol > li[progress-step='current'] ~ li:after,
-.progress > ol > li[progress-step='remained']:before,
-.progress > ol > li[progress-step='remained']:after {
-	color: #bebebe;
-	background-color: #e0e0e0;
-}
-
-.progress > ol > li[progress-step='current']:after {
-	height: 1.8rem;
-	background-color: transparent;
-	border-radius: 0;
-	background-image: url(../images/_common/symbols-and-icons/progress-step-current.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+.progress > ol > li[progress-step='current']:before {
+	border-bottom-right-radius: 0.05em;
+	transform: rotateZ(45deg);
 }
 
 .progress > ol > li:after,
 .progress > ol > li[progress-step='completed']:after {
 	font-family: 'FontAwesome';
 	content: '\f00c';
-	line-height: 1.6em;
 }
 
 .progress > ol > li[progress-step='current'] ~ li:after,
 .progress > ol > li[progress-step='remained']:after,
 .progress > ol > li[progress-step='current']:after {
-	font-family: inherit;
 	content: counter(step);
-	line-height: 1.5em;
+	font-family: inherit;
 }
 
-
-
-
-
-
-.progress > ol[progress-steps='2'] {
-	width: 340px;
-	left: -10px;
-}
-.progress > ol[progress-steps='2'] > li {
-	width: 50%;
-}
-.progress > ol[progress-steps='2'] > li:nth-of-type(2):before {
-	width: 50%;
+.progress > ol > li:first-child:before,
+.progress > ol > li:first-child:after {
 	left: 0;
 }
+
+.progress > ol > li:last-child:before,
+.progress > ol > li:last-child:after {
+	left: 100%;
+}
+
+
+
+
+.progress > ol > li,
+.progress > ol > li[progress-step='current'],
+.progress > ol > li[progress-step='completed'] {
+	color: white;
+	background-color: #26ba81;
+}
+
+.progress > ol > li[progress-step='current'] ~ li,
+.progress > ol > li[progress-step='current'] ~ li:before,
+.progress > ol > li[progress-step='remained'],
+.progress > ol > li[progress-step='remained']:before {
+	color: #bebebe;
+	background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+.progress > ol[progress-steps='2'],
+.progress > ol[progress-steps='3'],
+.progress > ol[progress-steps='4'] {
+	width: 250px;
+}
+
+
+
+
+.progress > ol[progress-steps='2'] > li {
+	width: 100%;
+}
+.progress > ol[progress-steps='2'] > li:first-child,
+.progress > ol[progress-steps='2'] > li:nth-of-type(2) {
+	width: 50%;
+}
+
+.progress > ol[progress-steps='2'] > li:nth-of-type(2):before,
+.progress > ol[progress-steps='2'] > li:nth-of-type(2):after {
+	left: 100%;
+}
+
 .progress > ol[progress-steps='2'] > li:nth-of-type(2) ~ li {
 	display: none;
 }
 
 
-.progress > ol[progress-steps='3'] {
-	width: 340px;
-	left: -10px;
-}
+
+
 .progress > ol[progress-steps='3'] > li {
-	width: 33.333%;
-}
-.progress > ol[progress-steps='3'] > li:nth-of-type(3):before {
 	width: 50%;
-	left: 0;
 }
+.progress > ol[progress-steps='3'] > li:first-child,
+.progress > ol[progress-steps='3'] > li:nth-of-type(3) {
+	width: 25%;
+}
+
+.progress > ol[progress-steps='3'] > li:nth-of-type(3):before,
+.progress > ol[progress-steps='3'] > li:nth-of-type(3):after {
+	left: 100%;
+}
+
 .progress > ol[progress-steps='3'] > li:nth-of-type(3) ~ li {
 	display: none;
 }
 
 
 
-.progress > ol[progress-steps='4'] {
-	width: 340px;
-	left: -10px;
-}
+
 .progress > ol[progress-steps='4'] > li {
-	width: 25%;
+	width: 33.3333%;
 }
-.progress > ol[progress-steps='4'] > li:nth-of-type(4):before {
-	width: 50%;
-	left: 0;
+.progress > ol[progress-steps='4'] > li:first-child,
+.progress > ol[progress-steps='4'] > li:nth-of-type(4) {
+	width: 16.6666%;
 }
+
+.progress > ol[progress-steps='4'] > li:nth-of-type(4):before,
+.progress > ol[progress-steps='4'] > li:nth-of-type(4):after {
+	left: 100%;
+}
+
 .progress > ol[progress-steps='4'] > li:nth-of-type(4) ~ li {
 	display: none;
 }
