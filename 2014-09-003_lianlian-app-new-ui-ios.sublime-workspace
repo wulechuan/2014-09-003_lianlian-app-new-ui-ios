@@ -4,16 +4,116 @@
 		"selected_items":
 		[
 			[
-				"rat",
-				"rotate"
+				"mar",
+				"margin-left"
 			],
 			[
-				"c",
+				"tex",
+				"text-align"
+			],
+			[
+				"di",
+				"direction"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"border-b",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-bot",
+				"border-bottom-width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"Font",
+				"FontAwesome"
+			],
+			[
+				"co",
 				"content"
 			],
 			[
-				"mar",
-				"margin-bottom"
+				"backre",
+				"background-repeat"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"lef",
+				"left"
+			],
+			[
+				"in",
+				"inside"
+			],
+			[
+				"lis",
+				"list-style-position"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"rat",
+				"rotate"
 			],
 			[
 				"pad",
@@ -42,10 +142,6 @@
 			[
 				"ti",
 				"tileElements"
-			],
-			[
-				"in",
-				"index"
 			],
 			[
 				"new",
@@ -160,10 +256,6 @@
 				"webkitAnimationEnd"
 			],
 			[
-				"w",
-				"webkit"
-			],
-			[
 				"hol",
 				"holdOn"
 			],
@@ -244,10 +336,6 @@
 				"brandName"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"n",
 				"normal"
 			],
@@ -258,26 +346,6 @@
 			[
 				"sc",
 				"scrollTo"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"bor",
-				"border-box"
-			],
-			[
-				"ma",
-				"margin"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"margin-",
@@ -324,20 +392,12 @@
 				"border-radius"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"border-col",
 				"border-color"
 			],
 			[
 				"boder-b",
 				"border-bottom-color"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"ha",
@@ -436,10 +496,6 @@
 				"builtItems"
 			],
 			[
-				"se",
-				"sectionRootElement"
-			],
-			[
 				"lin",
 				"linkUri"
 			],
@@ -458,74 +514,38 @@
 			[
 				"tra",
 				"transparent"
-			],
-			[
-				"box",
-				"box-shadow"
-			],
-			[
-				"bck",
-				"background-color"
-			],
-			[
-				"cla",
-				"classList"
-			],
-			[
-				"v",
-				"vertical-align"
-			],
-			[
-				"inlin",
-				"inline-block"
-			],
-			[
-				"borde-",
-				"border-box"
-			],
-			[
-				"r",
-				"rgba()"
-			],
-			[
-				"lly",
-				"lly-expandable-tile"
-			],
-			[
-				"data",
-				"investTeamData"
-			],
-			[
-				"tpj",
-				"tpjNeeds"
-			],
-			[
-				"s",
-				"set"
-			],
-			[
-				"Styl",
-				"FolderStyleSheets"
-			],
-			[
-				"alp",
-				"alphaBetEn"
-			],
-			[
-				"al",
-				"alphaBetZhCn"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "wwwroot/htmls/index.html",
+			"settings":
+			{
+				"buffer_size": 1875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wwwroot/stylesheets/lianlian.css",
+			"settings":
+			{
+				"buffer_size": 6113,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "wulechuan: Open with Chrome",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 380.0,
 		"selected_items":
 		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
 			[
 				"js",
 				"Set Syntax: JavaScript"
@@ -537,10 +557,6 @@
 			[
 				"json",
 				"Set Syntax: JSON"
-			],
-			[
-				"css",
-				"Set Syntax: CSS"
 			]
 		],
 		"width": 392.0
@@ -563,13 +579,21 @@
 	},
 	"expanded_folders":
 	[
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot"
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/vendors",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets"
 	],
 	"file_history":
 	[
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
+		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/zhonglu-chief-layout.css",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian-chief-layout.css",
+		"/D/p/LLY/Project/LuLuyou/LLY.Lottery/LLY.Lottery/Htmls/index.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian-theme-default.css",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios.sublime-project",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/news-csharp.html",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/zhonglu-chief-layout.css",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/zhonglu-theme-default.css",
 		"/D/Users/lechuan/Desktop/Downloads/angular.js",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/investments_csharp.html",
@@ -690,11 +714,7 @@
 		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/htmls/ad-ads-list.html",
 		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/scripts/lly-js.js",
 		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/scripts/lly-ui.js",
-		"/D/Users/lechuan/Desktop/QQ/chief-layout.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/app-welcome.css",
-		"/D/Users/lechuan/Desktop/wlc/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/htmls/index.html",
-		"/D/Users/lechuan/Desktop/wlc/wulechuan-web-front-end-demos-2014-08/wulechuan-demo8-css-宝藏与乌鸦/index.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux.sublime-project"
+		"/D/Users/lechuan/Desktop/QQ/chief-layout.css"
 	],
 	"find":
 	{
@@ -721,6 +741,60 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2",
+			"4",
+			"after",
+			":after",
+			":before",
+			"before",
+			"after",
+			"30px 30px",
+			"2",
+			"5",
+			"150%",
+			"750%",
+			"150%",
+			"2",
+			"5",
+			"bottom",
+			"10",
+			"1.5",
+			"2.5",
+			"1.25",
+			"1.5",
+			"20",
+			"10",
+			"100",
+			"10",
+			"0.1",
+			" 0.1",
+			"bottom",
+			"；",
+			"水平",
+			"line-height",
+			"attribute(progress-steps)",
+			"var",
+			"value",
+			"progress-steps",
+			"2",
+			"completed",
+			"[progress-step='completed']",
+			"before",
+			"<i>",
+			"<li>",
+			"after",
+			"inside",
+			"-1",
+			"2",
+			"url",
+			"article",
+			"active",
+			"#999",
+			"verifying",
+			"4.5",
+			"a",
+			"div",
+			"zhonglu",
 			"8083",
 			"333",
 			"666",
@@ -794,60 +868,6 @@
 			"_offsetY",
 			"_buildAndQueueOneStep",
 			"_scrollTo",
-			"_buildAndQueueOneStep",
-			"shouldMakeClone",
-			"_pos",
-			"n-",
-			"-",
-			": ",
-			"type",
-			"div",
-			"replace",
-			"SmoothScrollingController",
-			"smoothScrollingController",
-			"SmoothScrollingController",
-			"smoothScrollingController",
-			"SmoothScrollingController",
-			"_config",
-			"_traditionalScrollTo",
-			"		if (this.viewportIsWindow) {\n			window.scrollTo(this.finalX, this.finalY);\n		} else {\n			this.targetElement.parentNode.scrollLeft = this.finalX;\n			this.targetElement.parentNode.scrollTop  = this.finalY;\n		}\n",
-			"_onOneAnimationEnds",
-			"shouldMakeClone",
-			"_traditionalScrollTo",
-			"		if (this.viewportIsWindow) {\n			window.scrollTo(this.finalX, this.finalY);\n		} else {\n			this.targetElement.parentNode.scrollLeft = this.finalX;\n			this.targetElement.parentNode.scrollTop  = this.finalY;\n		}\n",
-			"window.scrollTo",
-			"toScrollTheWindowObject",
-			"scrollTo",
-			"_pStyle",
-			"absolute",
-			"_ref",
-			"red",
-			"top",
-			"freezeElementLook",
-			"_playAnimation",
-			"pageScroller",
-			".targetY",
-			"targetYOffset",
-			"SmoothScrollingController",
-			"targetY",
-			"scrollBack",
-			"windows",
-			"_tempLog",
-			"X",
-			"targetY",
-			"targetX",
-			"Number",
-			"_pN",
-			"this.targetElement.parentNode",
-			"this.targetElement",
-			"this.targetElement.parentNode",
-			"innerHeight",
-			"window",
-			"doc.documentElement",
-			"el",
-			"this",
-			"scrollTop",
-			"null",
 			"_buildAndQueueOneStep"
 		],
 		"highlight": true,
@@ -884,8 +904,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wwwroot/htmls/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								420,
+								420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wwwroot/stylesheets/lianlian.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5856,
+								5856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7614.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1133,7 +1212,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 308.0,
 	"status_bar_visible": true,
 	"template_settings":
