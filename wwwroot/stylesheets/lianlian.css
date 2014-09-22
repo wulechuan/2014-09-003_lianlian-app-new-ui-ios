@@ -1,0 +1,351 @@
+/* begin of part of Font Awesome 3.2.1 */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/fontAwesome.otf') format('opentype'), url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* end of part of Font Awesome 3.2.1 */
+
+
+button,
+input,
+textarea,
+select,
+option,
+html,
+body {
+	font-family: 'Hiragino Sans GB W3', 'Microsoft Yahei UI', 'Microsoft Yahei';
+	font-size: 20px;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+	font-size: 0.8rem;
+	outline: none;
+	border: 0px none transparent;
+}
+
+button {
+	color: white;
+	background-color: #16a1a4;
+	border-radius: 0.15rem;
+	width: 100%;
+	height: 2.2rem;
+}
+
+html {
+	color: #818d9e;
+	background-color: #f5f6f8;
+}
+
+em,
+em > a:link,
+em > a:active,
+em > a:visited {
+	color: red;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+.right {
+	text-align: right;
+}
+
+body {
+	margin: 0;
+}
+
+
+body > header {
+	height: 64px;
+	background-image: url(../images/_temp/fake-header.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	font-size: 0.7rem;
+	line-height: 1.2em;
+}
+
+main > section {
+	margin-bottom: 1.5em;
+}
+
+main > section.button {
+	margin: 2rem 0.8rem;
+}
+
+article {
+	margin: 0 1em;
+}
+
+article p {
+	margin: 0.5em 0;
+}
+
+.rows {
+	font-size: 0.8rem;
+	color: black;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px 0px;
+	border-color: #d9dee6;
+}
+
+.rows > .row {
+	height: 2.25rem;
+	line-height: 2.25rem;
+	margin-left: 1em;
+	border-bottom: 1px solid #d9dee6;
+}
+
+.rows > .row:last-child {
+	border-bottom: 0px none transparent;
+}
+
+
+.rows > .row.required {
+}
+
+.rows > .row label {
+	position: relative;
+	display: inline-block;
+	width: 4em;
+	margin-right: 0.75em;
+}
+
+.rows > .row.required label:before {
+	content: '*';
+	color: red;
+	position: absolute;
+	right: 100%;
+	margin-right: 0.25em;
+}
+
+
+.rows > .row input,
+.rows > .row textarea {
+	color: #818d9e;
+	border: none;
+}
+
+.rows > .row input {
+	margin: 0;
+	width: 10rem;
+}
+
+.rows > .row ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #818d9e;
+}
+.rows > .row :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #818d9e;
+   opacity:  1;
+}
+.rows > .row ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #818d9e;
+   opacity:  1;
+}
+.rows > .row :-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #818d9e;
+}
+
+
+
+
+.rows > .row.has-button input {
+	width: 6em;
+}
+
+.rows > .row.has-button button {
+	border-radius: 0;
+	border: none;
+	box-sizing: border-box;
+	width: 7em;
+	height: 100%;
+	float: right;
+}
+
+
+
+.rows > .row.menu {
+}
+
+
+
+
+.progress {
+	height: 65px;
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../images/_common/header-tiles.png);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+}
+
+.progress > ol {
+	counter-reset: step;
+
+	color: white;
+	position: relative;
+	height: 100%;
+	padding: 0;
+	margin: auto;
+}
+
+.progress > ol > li {
+	counter-increment: step;
+
+	height: 100%;
+	list-style: none;
+	display: block;
+	text-indent: 0;
+	float: left;
+	position: relative;
+
+}
+
+.progress > ol > li:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0.25rem;
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	margin-top: -0.125rem;
+	z-index: 0;
+}
+
+.progress > ol > li:after {
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+
+	border-radius: 100%;
+
+	text-align: center;
+	font-size: 1rem;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -0.75rem;
+	margin-top: -0.75rem;
+
+	z-index: 1;
+}
+
+.progress > ol > li:first-child:before {
+	width: 50%;
+	left: auto;
+	right: 0;
+}
+
+.progress > ol > li:last-child:before {
+	width: 50%;
+	left: 0;
+}
+
+.progress > ol > li:before,
+.progress > ol > li:after,
+.progress > ol > li[progress-step='current']:before,
+.progress > ol > li[progress-step='current']:after,
+.progress > ol > li[progress-step='completed']:before,
+.progress > ol > li[progress-step='completed']:after {
+	color: white;
+	background-color: #26ba81;
+}
+
+.progress > ol > li[progress-step='current'] ~ li:before,
+.progress > ol > li[progress-step='current'] ~ li:after,
+.progress > ol > li[progress-step='remained']:before,
+.progress > ol > li[progress-step='remained']:after {
+	color: #bebebe;
+	background-color: #e0e0e0;
+}
+
+.progress > ol > li[progress-step='current']:after {
+	height: 1.8rem;
+	background-color: transparent;
+	border-radius: 0;
+	background-image: url(../images/_common/symbols-and-icons/progress-step-current.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.progress > ol > li:after,
+.progress > ol > li[progress-step='completed']:after {
+	font-family: 'FontAwesome';
+	content: '\f00c';
+	line-height: 1.6em;
+}
+
+.progress > ol > li[progress-step='current'] ~ li:after,
+.progress > ol > li[progress-step='remained']:after,
+.progress > ol > li[progress-step='current']:after {
+	font-family: inherit;
+	content: counter(step);
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+.progress > ol[progress-steps='2'] {
+	width: 340px;
+	left: -10px;
+}
+.progress > ol[progress-steps='2'] > li {
+	width: 50%;
+}
+.progress > ol[progress-steps='2'] > li:nth-of-type(2):before {
+	width: 50%;
+	left: 0;
+}
+.progress > ol[progress-steps='2'] > li:nth-of-type(2) ~ li {
+	display: none;
+}
+
+
+.progress > ol[progress-steps='3'] {
+	width: 340px;
+	left: -10px;
+}
+.progress > ol[progress-steps='3'] > li {
+	width: 33.333%;
+}
+.progress > ol[progress-steps='3'] > li:nth-of-type(3):before {
+	width: 50%;
+	left: 0;
+}
+.progress > ol[progress-steps='3'] > li:nth-of-type(3) ~ li {
+	display: none;
+}
+
+
+
+.progress > ol[progress-steps='4'] {
+	width: 340px;
+	left: -10px;
+}
+.progress > ol[progress-steps='4'] > li {
+	width: 25%;
+}
+.progress > ol[progress-steps='4'] > li:nth-of-type(4):before {
+	width: 50%;
+	left: 0;
+}
+.progress > ol[progress-steps='4'] > li:nth-of-type(4) ~ li {
+	display: none;
+}

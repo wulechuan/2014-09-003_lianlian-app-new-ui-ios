@@ -1,0 +1,28 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "wwwroot"
+		}
+	],
+    "build_systems": // http://sublimetext.info/docs/en/reference/build_systems.html
+    [
+        {
+            "name": "wulechuan: Open with IE",
+            "shell_cmd": "\"C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe\" http://localhost:8080/htmls/$file_name" //$file means fullpath+name
+        },
+        {
+            "name": "wulechuan: Open with Chrome",
+            "shell_cmd": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" http://localhost:8080/htmls/$file_name"
+        },
+        {
+            "name": "wulechuan: Open with FireFox",
+            "shell_cmd": "\"C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe\" http://localhost:8080/htmls/$file_name"
+        },
+        {
+            "name": "wulechuan: Open with Opera Next",
+            "shell_cmd": "\"C:\\Program Files (x86)\\Opera Next\\launcher.exe\" http://localhost:8080/htmls/$file_name"
+        },
+    ]
+}
