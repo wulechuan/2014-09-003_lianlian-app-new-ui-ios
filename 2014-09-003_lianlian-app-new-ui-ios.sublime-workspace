@@ -4,16 +4,108 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"l",
+				"letter-spacing"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
 				"mar",
+				"margin"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"margin",
 				"margin-left"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"ffm",
+				"ffmpeg-Output"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"_key",
+				"_keyValue"
+			],
+			[
+				"ff",
+				"ffmpeg"
 			],
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"di",
-				"direction"
 			],
 			[
 				"te",
@@ -26,10 +118,6 @@
 			[
 				"border-bot",
 				"border-bottom-width"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"f",
@@ -46,18 +134,6 @@
 			[
 				"backre",
 				"background-repeat"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"ma",
-				"margin-top"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"lef",
@@ -84,10 +160,6 @@
 				"article	Tag"
 			],
 			[
-				"fon",
-				"font-style"
-			],
-			[
 				"c",
 				"color"
 			],
@@ -98,14 +170,6 @@
 			[
 				"w",
 				"width"
-			],
-			[
-				"bor",
-				"border-bottom"
-			],
-			[
-				"ba",
-				"background-image"
 			],
 			[
 				"borde",
@@ -150,10 +214,6 @@
 			[
 				"st",
 				"style	Tag"
-			],
-			[
-				"t",
-				"true"
 			],
 			[
 				"til",
@@ -364,10 +424,6 @@
 				"tileElements"
 			],
 			[
-				"pa",
-				"padding"
-			],
-			[
 				"_c",
 				"_currents"
 			],
@@ -404,16 +460,8 @@
 				"hasOwnProperty"
 			],
 			[
-				"ex",
-				"expansionOccupations"
-			],
-			[
 				"expansionD",
 				"expansionDesiredOccupiedCols"
-			],
-			[
-				"d",
-				"desiredCols"
 			],
 			[
 				"exp",
@@ -464,66 +512,18 @@
 				"defaultExpansionOccupyColumns"
 			],
 			[
-				"l",
-				"length"
-			],
-			[
 				"lo",
 				"logName"
-			],
-			[
-				"grid",
-				"gridsColumns"
-			],
-			[
-				"col",
-				"gridsColumns"
-			],
-			[
-				"inv",
-				"investTeamData"
-			],
-			[
-				"tile",
-				"tileElements"
-			],
-			[
-				"builT",
-				"builtTileElements"
-			],
-			[
-				"buil",
-				"builtItems"
-			],
-			[
-				"lin",
-				"linkUri"
-			],
-			[
-				"_r",
-				"_urlString"
-			],
-			[
-				"imag",
-				"imageScrUri"
-			],
-			[
-				"bord",
-				"border"
-			],
-			[
-				"tra",
-				"transparent"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "wwwroot/htmls/index.html",
+			"file": "wwwroot/htmls/_template.html",
 			"settings":
 			{
-				"buffer_size": 1875,
+				"buffer_size": 4680,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "wwwroot/stylesheets/lianlian.css",
 			"settings":
 			{
-				"buffer_size": 6113,
+				"buffer_size": 12217,
 				"line_ending": "Windows"
 			}
 		}
@@ -539,9 +539,13 @@
 	"build_system": "wulechuan: Open with Chrome",
 	"command_palette":
 	{
-		"height": 380.0,
+		"height": 173.0,
 		"selected_items":
 		[
+			[
+				"bat",
+				"Set Syntax: Batch File"
+			],
 			[
 				"css",
 				"Set Syntax: CSS"
@@ -587,6 +591,10 @@
 	],
 	"file_history":
 	[
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/index.html",
+		"/D/Users/lechuan/Desktop/ffmpeg-mux(copy)-m4v-and-m4a.bat",
+		"/D/Users/lechuan/Desktop/wlc/GitHub/wlcJS/wwwroot/scripts/_tools/bat/wlc-copy-files - _core.bat",
+		"/D/Users/lechuan/Desktop/ffmpeg.bat",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/zhonglu-chief-layout.css",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian-chief-layout.css",
@@ -710,15 +718,11 @@
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits-v2-failed.css",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/scripts/wlc-js.js",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits-v1.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/animation-tester.html",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/htmls/ad-ads-list.html",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/scripts/lly-js.js",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo9-静态html-css排版技巧3-一套模板/scripts/lly-ui.js",
-		"/D/Users/lechuan/Desktop/QQ/chief-layout.css"
+		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/animation-tester.html"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -741,6 +745,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"simplified",
+			"button",
+			"808d9d",
+			"header",
+			"button",
+			"line-height: 1.33em",
+			"line-height: 1.5em;",
+			"1.5em",
+			" 1.5em",
+			"header",
+			"date",
+			"	color",
+			"und-colo",
+			"color",
+			"content",
+			"after",
+			"before",
+			"		font-size: ;",
+			"shen",
+			"song",
+			":before",
+			"song",
+			"bottom",
+			"button",
+			"label",
+			"authenticate-paper",
+			"\n	ba",
+			"label",
+			"margin",
+			"echo *",
+			"echo.",
+			"*",
+			"_regKeyValue",
+			"saveCurrentUserDesktopFolderTo",
+			"tempFolderRaw",
+			"ffmpegFolder",
+			"saveCurrentUserDesktopFolder",
+			"getCurrentUserDesktopFolder",
+			"_key",
+			"_keyValue",
+			"__tempDT",
+			"__tempDesktop",
+			"_desktopfolder",
+			"desktopfolder",
+			"__desktopReg",
+			"tempDesktopReg",
+			"DesktopReg",
+			"desktopreg",
+			"ddesktopreg",
+			"outputFileName",
+			"em",
 			"2",
 			"4",
 			"after",
@@ -817,58 +872,7 @@
 			"&&",
 			"formatHtml",
 			"body.page-",
-			"#brands-section ",
-			"[id|='brands-section'] ",
-			"leftMenuItemLocalLife",
-			"document.body.querySelector('#brands-sectio",
-			" id=\"brands-sect",
-			"_index",
-			"caption",
-			"tileElements",
-			"_thisController.",
-			"tileElements",
-			"fillCurrentNewsArticleDataInto",
-			"fillCurrentNewsTitleDataInto",
-			"newsListRoot",
-			"newsArticleSelector",
-			"newsArticlePage",
-			"newsArticleSelector",
-			"newsArticlePage",
-			"newsArticleSelector",
-			"newsListButtonNext",
-			"newsListButtonPrev",
-			"newsListFlipoverRootElement",
-			"fillCurrentNewsArticleDataInto",
-			"rootElement",
-			"newsListControl",
-			"newsListElements.listItems",
-			"newsListElements",
-			"html",
-			"html.page-",
-			"gotoCategoryLocalLife",
-			"databaseIndex",
-			"newsArticleSelector",
-			"locallife",
-			"newsListData.items",
-			"';",
-			"			'",
-			"#",
-			"fillCurrentNewsArticleDataInto",
-			"newsListControl",
-			"_thisController",
-			"qS('#di')",
-			"event.target",
-			"_thisController",
-			"viewportIsWindow",
-			"Width",
-			"window.devicePixelRatio * ",
-			"targetY",
-			"innerWidth",
-			"_maxAllowedOffsetY",
-			"_offsetY",
-			"_buildAndQueueOneStep",
-			"_scrollTo",
-			"_buildAndQueueOneStep"
+			"#brands-section "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -909,19 +913,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "wwwroot/htmls/index.html",
+					"file": "wwwroot/htmls/_template.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1875,
+						"buffer_size": 4680,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								420,
-								420
+								3488,
+								3496
 							]
 						],
 						"settings":
@@ -930,27 +934,37 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2622.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 1,
 					"file": "wwwroot/stylesheets/lianlian.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6113,
+						"buffer_size": 12217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5856,
-								5856
+								11243,
+								11243
+							],
+							[
+								11354,
+								11354
 							]
 						],
 						"settings":
@@ -959,10 +973,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7614.0,
+						"translation.y": 11781.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -985,11 +999,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.581499726327,
 			1.0
 		],
 		"rows":
@@ -1205,7 +1226,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
