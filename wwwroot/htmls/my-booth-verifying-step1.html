@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="page-my-booth">
+<head>
+	<meta charset="utf-8">
+	<title>连联wifi商家管理</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
+	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<section class="progress">
+			<ol progress-steps="2">
+				<li progress-step="current"></li>
+				<li></li>
+			</ol>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row required">
+					<label for="owner-mobile">手机号码</label><input type="tel" name="owner-mobile" id="owner-mobile" placeholder="输入当前绑定的手机号码" />
+				</div>
+				<div class="row required has-button">
+					<label for="verifying-code">验证码</label><input type="text" name="verifying-code" id="verifying-code" /><button>选择热点</button>
+				</div>
+			</div>
+			<article><p class="rightside"><em><a href="#">收不到验证码?</a></em></p></article>
+		</section>
+
+		<section class="button">
+			<article>
+				<button id="button-submit">确定</button>
+			</article>
+		</section>
+	</main>
+	<script src="../scripts/this-app/lianlian-app.js"></script>
+	<script>
+		var buttonSubmit = document.body.querySelector('#button-submit');
+		var nextStepUri = 'my-booth-verifying-step2' + (appEnv.isIOS ? '' : '') + '.html';
+
+		buttonSubmit.addEventListener('click', function (event) {
+			window.location.assign(nextStepUri);
+		});
+	</script>
+</body>
+</html>

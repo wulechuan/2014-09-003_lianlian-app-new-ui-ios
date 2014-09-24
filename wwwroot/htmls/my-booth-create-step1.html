@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="page-my-booth">
+<head>
+	<meta charset="utf-8">
+	<title>连联wifi商家管理</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
+	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<section class="progress">
+			<ol progress-steps="4">
+				<li progress-step="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row required">
+					<label for="booth-name">商户名称</label><input type="text" name="booth-name" id="booth-name" placeholder="输入商户名称" />
+				</div>
+			</div>
+			<article><p>名称格式：品牌或字号名称+(分店名称)。例如：麦当劳（西直门店），不超过30个汉字。</p></article>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row required">
+					<label for="booth-address">商户地址</label><input type="text" name="booth-address" id="booth-address" placeholder="输入商户地址" class="strong" />
+					<i class="rightside" icon-face="location-orange"></i>
+				</div>
+				<div class="row required">
+					<label for="booth-address-detail">详细地址</label><input type="text" name="booth-address-detail" id="booth-address-detail" placeholder="输入详细地址" />
+				</div>
+				<div class="row menu required" id="my-booth-category-row">
+					<label>商户类型</label><span id="my-booth-category"></span>
+				</div>
+			</div>
+			<article>
+				<p>商户类型应与营业执照上的经营范围对应。</p>
+			</article>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row taller dual-columns">
+					<aside>
+						<span required>商家照片</span><i class="img placeholder-take-a-photo"></i>
+					</aside>
+					<aside>
+						<span>图例</span><i class="img sample-booth-photo"></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row article">
+					<label required>商家简介</label>
+					<div class="text-area-container">
+						<textarea placeholder="请输入商家介绍"></textarea>
+					</div>
+				</div>
+			</div>
+			<article><p class="rightside">限200字</p></article>
+		</section>
+
+		<section class="button">
+			<article>
+				<button id="button-next-step">下一步</button>
+			</article>
+		</section>
+	</main>
+
+	<section id="popup-layers">
+		<section id="booth-categories-selector" class="booth-categories-selector" popup-window style="display:none;">
+			<nav>
+				<ul>
+					<li class="current">全部热点
+						<ul>
+							<li sortingCond>咖啡厅</li>
+							<li>学校</li>
+							<li>快餐店</li>
+							<li>麦当劳</li>
+							<li>肯德基</li>
+							<li>理发店</li>
+							<li>酒店</li>
+							<li>烧烤</li>
+						</ul>
+					</li>
+
+					<li>餐饮
+						<ul>
+							<li>餐饮1</li>
+							<li>餐饮2</li>
+							<li>餐饮3</li>
+							<li>餐饮4</li>
+							<li>餐饮5</li>
+							<li>餐饮6</li>
+						</ul>
+					</li>
+
+					<li>娱乐
+						<ul>
+							<li>娱乐1</li>
+							<li>娱乐2</li>
+							<li>娱乐3</li>
+							<li>娱乐4</li>
+							<li>娱乐5</li>
+							<li>娱乐6</li>
+						</ul>
+					</li>
+
+					<li>购物场所
+						<ul>
+							<li>购物场所1</li>
+							<li>购物场所2</li>
+							<li>购物场所3</li>
+							<li>购物场所4</li>
+							<li>购物场所5</li>
+							<li>购物场所6</li>
+						</ul>
+					</li>
+
+					<li>公共场所
+						<ul>
+							<li>公共场所1</li>
+							<li>公共场所2</li>
+							<li>公共场所3</li>
+							<li>公共场所4</li>
+							<li>公共场所5</li>
+							<li>公共场所6</li>
+						</ul>
+					</li>
+
+					<li>运动健身
+						<ul>
+							<li>运动健身1</li>
+							<li>运动健身2</li>
+							<li>运动健身3</li>
+							<li>运动健身4</li>
+							<li>运动健身5</li>
+							<li>运动健身6</li>
+						</ul>
+					</li>
+
+					<li>生活服务
+						<ul>
+							<li>生活服务1</li>
+							<li>生活服务2</li>
+							<li>生活服务3</li>
+							<li>生活服务4</li>
+							<li>生活服务5</li>
+							<li>生活服务6</li>
+						</ul>
+					</li>
+
+					<li>其他
+						<ul>
+							<li>其他1</li>
+							<li>其他2</li>
+							<li>其他3</li>
+							<li>其他4</li>
+							<li>其他5</li>
+							<li>其他6</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</section>
+
+		<section id="booth-location-selector" class="booth-location-selector" popup-window style="display:none;">
+			<select name="booth-location-level1">
+				<option>北京市</option>
+				<option>上海市</option>
+				<option>天津市</option>
+				<option>重庆市</option>
+				<option>江西省</option>
+			</select>
+
+			<select name="booth-location-level2">
+				<option>数据待定</option>
+			</select>
+
+			<select name="booth-location-level3">
+				<option>数据待定</option>
+			</select>
+		</section>
+	</section>
+	<script src="../scripts/this-app/lianlian-app.js"></script>
+	<script>
+		var myBoothCategoryRow = document.body.querySelector('#my-booth-category-row');
+		var myBoothCategory = document.body.querySelector('#my-booth-category');
+
+		myBoothCategoryRow.addEventListener('click', function (event) {
+			// popup a window
+			alert('美食 西餐厅');
+			var category = '美食 西餐厅'
+			myBoothCategory.innerHTML = category;
+		});
+
+
+
+
+		var buttonNextStep = document.body.querySelector('#button-next-step');
+		// var nextStepUri = 'my-booth-create-step2' + (appEnv.isIOS ? '-ios' : '-android') + '.html';
+		var nextStepUri = 'my-booth-create-step2' + (appEnv.isIOS ? '' : '') + '.html';
+
+		buttonNextStep.addEventListener('click', function (event) {
+			window.location.assign(nextStepUri);
+		});
+	</script>
+</body>
+</html>

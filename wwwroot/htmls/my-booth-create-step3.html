@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="page-my-booth">
+<head>
+	<meta charset="utf-8">
+	<title>连联wifi商家管理</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
+	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<section class="progress">
+			<ol progress-steps="4">
+				<li></li>
+				<li></li>
+				<li progress-step="current"></li>
+				<li></li>
+			</ol>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row required">
+					<label for="business-lic-sn" class="free-length">营业执照注册号</label><input type="text" name="business-lic-sn" id="business-lic-sn" placeholder="" style="width: 50%;" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row taller dual-columns">
+					<aside>
+						<span required>营业执照副本照片</span><i class="img placeholder-take-a-photo"></i>
+					</aside>
+					<aside>
+						<span>图例</span><i class="img sample-business-license"></i>
+					</aside>
+				</div>
+			</div>
+			<article>
+				<p>必须是有最新年检的营业执照。<br/>
+					证件上的商户名称应与填写的商户名称相符。<br/>
+					如果您上传的是证照的复印件，复印件上必须盖有清晰的红章。</p>
+			</article>
+		</section>
+
+		<section>
+			<div class="rows">
+				<div class="row taller dual-columns">
+					<aside>
+						<span required>资质照片</span><i class="img placeholder-take-a-photo"></i>
+					</aside>
+					<aside>
+						<span>图例</span><i class="img sample-authenticate-paper"></i>
+					</aside>
+				</div>
+			</div>
+			<article>
+				<p>如商户名称和营业执照名称不一致（如品牌加盟等情况），需提交相关文件（品牌加盟协议或授权使用书等） 。</p>
+				<p>如果您上传的是证照的复印件，复印件上必须盖有清晰的红章。</p>
+			</article>
+		</section>
+
+		<section class="button">
+			<article>
+				<button id="button-next-step">下一步</button>
+			</article>
+		</section>
+	</main>
+	<script src="../scripts/this-app/lianlian-app.js"></script>
+	<script>
+		var buttonNextStep = document.body.querySelector('#button-next-step');
+		var nextStepUri = 'my-booth-create-step4' + (appEnv.isIOS ? '-ios' : '-android') + '.html';
+
+		buttonNextStep.addEventListener('click', function (event) {
+			window.location.assign(nextStepUri);
+		});
+	</script>
+</body>
+</html>

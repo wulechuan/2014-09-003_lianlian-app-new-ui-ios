@@ -4,16 +4,60 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-size"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
 				"pa",
-				"padding-bottom"
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"my",
+				"myBoothCategoryRow"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"h",
+				"href	Attr"
 			],
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"h",
-				"height	Attr"
 			],
 			[
 				"fon",
@@ -24,28 +68,12 @@
 				"margin"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
-				"l",
-				"letter-spacing"
-			],
-			[
 				"bor",
 				"border-box"
 			],
 			[
-				"s",
-				"solid"
-			],
-			[
 				"t",
 				"text-align"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"tra",
@@ -112,10 +140,6 @@
 				"text-align"
 			],
 			[
-				"border-b",
-				"border-bottom-left-radius"
-			],
-			[
 				"border-bot",
 				"border-bottom-width"
 			],
@@ -148,20 +172,12 @@
 				"list-style-position"
 			],
 			[
-				"bac",
-				"background-color"
-			],
-			[
 				"se",
 				"section	Tag"
 			],
 			[
 				"ar",
 				"article	Tag"
-			],
-			[
-				"c",
-				"color"
 			],
 			[
 				"wi",
@@ -498,22 +514,6 @@
 			[
 				"def",
 				"defaultExpansionOccupyRows"
-			],
-			[
-				"oneTileI",
-				"oneTileIsCollapsing"
-			],
-			[
-				"comin",
-				"comingTileId"
-			],
-			[
-				"defa",
-				"defaultExpansionOccupyColumns"
-			],
-			[
-				"lo",
-				"logName"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "wwwroot/htmls/_template.html",
 			"settings":
 			{
-				"buffer_size": 4680,
+				"buffer_size": 4768,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wwwroot/htmls/my-booth-customers-msg.html",
+			"settings":
+			{
+				"buffer_size": 1294,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +539,7 @@
 			"file": "wwwroot/stylesheets/lianlian.css",
 			"settings":
 			{
-				"buffer_size": 12217,
+				"buffer_size": 16439,
 				"line_ending": "Windows"
 			}
 		}
@@ -591,11 +599,26 @@
 	],
 	"file_history":
 	[
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step1.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying-step1.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step3.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying-step2.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-wifi-spot-edit.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-wifi-spot-add.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step4-android.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step2.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/t.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth--index.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-info.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/vendors/jquery-1.11.1.min.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/_template.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian.css",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/index.html",
 		"/D/Users/lechuan/Desktop/ffmpeg-mux(copy)-m4v-and-m4a.bat",
 		"/D/Users/lechuan/Desktop/wlc/GitHub/wlcJS/wwwroot/scripts/_tools/bat/wlc-copy-files - _core.bat",
 		"/D/Users/lechuan/Desktop/ffmpeg.bat",
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/zhonglu-chief-layout.css",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian-chief-layout.css",
 		"/D/p/LLY/Project/LuLuyou/LLY.Lottery/LLY.Lottery/Htmls/index.html",
@@ -703,26 +726,11 @@
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try.html",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try2.html",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/app-welcome.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/scripts/wlc-website.js",
-		"/D/Users/lechuan/Desktop/wlc/share/wwwroot/scripts/init-website.js",
-		"/D/Users/lechuan/Desktop/wlc/share/wwwroot/htmls/try3.html",
-		"/D/方案1 - HEU KMS Activator 7.8.6 (2014-04-29) by 孙朋朋（知彼而知己） (针对Windows8.x，包括Server2012R2;针对Office2010+2013)/Windows8+Office2013自动激活工具说明书.txt",
-		"/D/Users/lechuan/Desktop/renderers.txt",
-		"/D/Users/lechuan/Desktop/cebas蚊子渲染器",
-		"/D/Users/lechuan/Desktop/renderers",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits-debug.css",
-		"/D/Users/lechuan/VMWare/XP-wlc/XP-wlc.vmxf",
-		"/D/Users/lechuan/VMWare/XP-wlc/XP-wlc.vmx",
-		"/D/list.txt",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits-v2-failed.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/scripts/wlc-js.js",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits-v1.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/animation-tester.html"
+		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits.css"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -745,6 +753,67 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</h3>	",
+			"url(.png)",
+			"</div>",
+			" wifi-spot",
+			"2.8",
+			"wifi-spot",
+			"menu",
+			"label",
+			"normal",
+			"header",
+			".popup-window",
+			"absolute",
+			"buttonSubmit",
+			"wifi-ssid",
+			"wifi-password",
+			"isIOS",
+			"NextStep",
+			"next-step",
+			"_targetUri",
+			"<br/>",
+			"owner-name",
+			"owner",
+			"address",
+			"booth",
+			"innerHTML",
+			"categories",
+			"生活服务",
+			"运动健身",
+			"公共场所",
+			"娱乐",
+			"餐饮",
+			"span",
+			"西餐厅",
+			"argument",
+			"click",
+			"-",
+			"my",
+			"span",
+			"验证码",
+			"relative",
+			"address",
+			"-name",
+			"name",
+			"a",
+			"em",
+			"b",
+			"a",
+			"free",
+			"\"><div ",
+			"</a></div>",
+			"\n				<p>",
+			".rows > .row",
+			".rows > .row.men",
+			"</i><span>",
+			"span",
+			"absolute",
+			"<span>ad",
+			"an for",
+			"i>",
+			"adsda",
+			"<i>adsda</i>",
 			"simplified",
 			"button",
 			"808d9d",
@@ -811,68 +880,7 @@
 			"150%",
 			"2",
 			"5",
-			"bottom",
-			"10",
-			"1.5",
-			"2.5",
-			"1.25",
-			"1.5",
-			"20",
-			"10",
-			"100",
-			"10",
-			"0.1",
-			" 0.1",
-			"bottom",
-			"；",
-			"水平",
-			"line-height",
-			"attribute(progress-steps)",
-			"var",
-			"value",
-			"progress-steps",
-			"2",
-			"completed",
-			"[progress-step='completed']",
-			"before",
-			"<i>",
-			"<li>",
-			"after",
-			"inside",
-			"-1",
-			"2",
-			"url",
-			"article",
-			"active",
-			"#999",
-			"verifying",
-			"4.5",
-			"a",
-			"div",
-			"zhonglu",
-			"8083",
-			"333",
-			"666",
-			"9edc00",
-			"666",
-			"first",
-			" !important",
-			"pointer",
-			"allowed",
-			":disabled",
-			"cursor",
-			"disabled",
-			"isString",
-			";",
-			"border",
-			".chief-content ",
-			".page-index",
-			"page-index",
-			"(\\n+|(sa)+)",
-			"&&",
-			"formatHtml",
-			"body.page-",
-			"#brands-section "
+			"bottom"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -908,7 +916,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -917,15 +925,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4680,
+						"buffer_size": 4768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3488,
-								3496
+								425,
+								426
 							]
 						],
 						"settings":
@@ -934,10 +942,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2622.0,
+						"translation.y": 2661.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wwwroot/htmls/my-booth-customers-msg.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1278,
+								1278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 264.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -947,24 +984,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "wwwroot/stylesheets/lianlian.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12217,
+						"buffer_size": 16439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11243,
-								11243
-							],
-							[
-								11354,
-								11354
+								7257,
+								7257
 							]
 						],
 						"settings":
@@ -973,10 +1006,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 11781.0,
+						"translation.y": 3222.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -984,7 +1017,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1010,7 +1043,7 @@
 		"cols":
 		[
 			0.0,
-			0.581499726327,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1031,7 +1064,7 @@
 	"project": "2014-09-003_lianlian-app-new-ui-ios.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1226,7 +1259,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
