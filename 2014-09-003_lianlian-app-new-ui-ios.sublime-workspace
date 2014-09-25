@@ -4,8 +4,96 @@
 		"selected_items":
 		[
 			[
+				"on",
+				"onupdate"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"ha",
+				"hasOwnProperty"
+			],
+			[
+				"s",
+				"startAngle"
+			],
+			[
+				"up",
+				"_updateByAngles"
+			],
+			[
+				"sty",
+				"styleElement"
+			],
+			[
+				"hal",
+				"half2Angle"
+			],
+			[
+				"hlaf",
+				"half1Angle"
+			],
+			[
+				"st",
+				"startAngle"
+			],
+			[
+				"graphP",
+				"graphPieMaleData"
+			],
+			[
+				"maro",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"inpu",
+				"inputs"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"c",
+				"checked"
+			],
+			[
+				"inp",
+				"inputs"
+			],
+			[
 				"pa",
-				"padding"
+				"padding-top"
+			],
+			[
+				"sw",
+				"switchTo"
+			],
+			[
+				"che",
+				"checkedValue"
+			],
+			[
+				"ins",
+				"instanceof"
+			],
+			[
+				"_ch",
+				"_check"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
 			],
 			[
 				"cl",
@@ -14,10 +102,6 @@
 			[
 				"co",
 				"color"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"back",
@@ -30,10 +114,6 @@
 			[
 				"no",
 				"nowrap"
-			],
-			[
-				"c",
-				"color"
 			],
 			[
 				"n",
@@ -58,10 +138,6 @@
 			[
 				"fonts",
 				"font-style"
-			],
-			[
-				"s",
-				"solid"
 			],
 			[
 				"border-b",
@@ -242,10 +318,6 @@
 			[
 				"new",
 				"newsListElements"
-			],
-			[
-				"st",
-				"style	Tag"
 			],
 			[
 				"til",
@@ -442,78 +514,6 @@
 			[
 				"max",
 				"max-height"
-			],
-			[
-				"win",
-				"windowsScrolls"
-			],
-			[
-				"elem",
-				"tileElements"
-			],
-			[
-				"_c",
-				"_currents"
-			],
-			[
-				"cu",
-				"currents"
-			],
-			[
-				"m",
-				"margin-top"
-			],
-			[
-				"im",
-				"important"
-			],
-			[
-				"bak",
-				"background-color"
-			],
-			[
-				"border-col",
-				"border-color"
-			],
-			[
-				"boder-b",
-				"border-bottom-color"
-			],
-			[
-				"ha",
-				"hasOwnProperty"
-			],
-			[
-				"expansionD",
-				"expansionDesiredOccupiedCols"
-			],
-			[
-				"exp",
-				"expansionDesiredOccupyCols"
-			],
-			[
-				"gri",
-				"gridsCols"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"_t",
-				"_tileElements"
-			],
-			[
-				"ele",
-				"element"
-			],
-			[
-				"tilE",
-				"tileElements"
-			],
-			[
-				"gr",
-				"gridsColumns"
 			]
 		]
 	},
@@ -523,7 +523,23 @@
 			"file": "wwwroot/htmls/my-booth-customers-statistics.html",
 			"settings":
 			{
-				"buffer_size": 2484,
+				"buffer_size": 3997,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wwwroot/htmls/ad-private-msg--index.html",
+			"settings":
+			{
+				"buffer_size": 2218,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wwwroot/htmls/_template.html",
+			"settings":
+			{
+				"buffer_size": 8199,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +547,7 @@
 			"file": "wwwroot/stylesheets/lianlian.css",
 			"settings":
 			{
-				"buffer_size": 21966,
+				"buffer_size": 25629,
 				"line_ending": "Windows"
 			}
 		}
@@ -591,6 +607,12 @@
 	],
 	"file_history":
 	[
+		"/D/Users/lechuan/Desktop/wlc/Preferences.sublime-settings",
+		"/D/Users/lechuan/Desktop/wlc/looper.js",
+		"/D/Users/lechuan/Desktop/wlc/share/wlc-graph-pie/pie.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
+		"/D/Users/lechuan/Desktop/pie.css",
+		"/D/Users/lechuan/Desktop/pie.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-choosers.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-msg.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-visitors.html",
@@ -603,7 +625,6 @@
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step3.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying-step2.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying.html",
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-wifi-spot-edit.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-wifi-spot-add.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step4-android.html",
@@ -642,7 +663,6 @@
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/investments.html",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/scripts/lly-nm-smooth-scroller.js",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/app-ad-clicked-v1.html",
-		"/D/Users/lechuan/Desktop/wlc/looper.js",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/scripts/lly-nm-expandable-tiles.js",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/stylesheets/lly-animation-toolkits.css",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/_temp/brands.js",
@@ -714,11 +734,7 @@
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/app-welcome-stage.css",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/scripts/app-welcome-play.js",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/scripts/app-welcome-init.js",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo10-交互系统雏形/scripts/wlc-js.js",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/animate.css",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo10-交互系统雏形/try-2.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try3.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/2.html"
+		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo10-交互系统雏形/scripts/wlc-js.js"
 	],
 	"find":
 	{
@@ -745,6 +761,72 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_thisSwitcher",
+			"onswitch",
+			"onupdate",
+			"graphs",
+			"value",
+			"this.update",
+			"endAngle",
+			"value",
+			"data",
+			"percentage",
+			" *",
+			"ore'",
+			"graph-pie",
+			"start",
+			"var",
+			"start",
+			"startAngle",
+			"_switchTo",
+			"_thisSwitcher",
+			"inputs",
+			"rootElement",
+			"CreateLLYSwitcherController",
+			"33",
+			"ff4141",
+			"female",
+			"03a3a6",
+			"male",
+			"red",
+			"gold",
+			".graph-pies-block ",
+			"*[graph-pie]",
+			".innerHTML",
+			"Unknown",
+			"fisrtShow",
+			" id=\"graph-pie",
+			"span",
+			"after",
+			"before",
+			"*[graph-pie]",
+			"translate3D(-50%, -50%) scale3D(0.5,0.5,0.5)",
+			"10",
+			"first-child:",
+			".half",
+			".graph-pie",
+			"h2",
+			"none",
+			"h2",
+			"-visitors",
+			" .graph-columns",
+			"-visitors",
+			"vistors-option",
+			"graph-columns-visitors-",
+			"name=\"graph-columns-visitors\"",
+			"graph-columns-",
+			"display",
+			"CreateLLYSwitcher",
+			"LLYSwitcher",
+			"switcherGraphColumnsVisitors",
+			"argument",
+			"checked",
+			"_switchTo",
+			"_check",
+			"this",
+			"iInt",
+			"checkedValue",
+			"find",
 			"argument",
 			"switcher-",
 			"<label>",
@@ -806,73 +888,7 @@
 			"20%",
 			"3rem",
 			"before",
-			"</h3>	",
-			"url(.png)",
-			"</div>",
-			" wifi-spot",
-			"2.8",
-			"wifi-spot",
-			"menu",
-			"label",
-			"normal",
-			"header",
-			".popup-window",
-			"absolute",
-			"buttonSubmit",
-			"wifi-ssid",
-			"wifi-password",
-			"isIOS",
-			"NextStep",
-			"next-step",
-			"_targetUri",
-			"<br/>",
-			"owner-name",
-			"owner",
-			"address",
-			"booth",
-			"innerHTML",
-			"categories",
-			"生活服务",
-			"运动健身",
-			"公共场所",
-			"娱乐",
-			"餐饮",
-			"span",
-			"西餐厅",
-			"argument",
-			"click",
-			"-",
-			"my",
-			"span",
-			"验证码",
-			"relative",
-			"address",
-			"-name",
-			"name",
-			"a",
-			"em",
-			"b",
-			"a",
-			"free",
-			"\"><div ",
-			"</a></div>",
-			"\n				<p>",
-			".rows > .row",
-			".rows > .row.men",
-			"</i><span>",
-			"span",
-			"absolute",
-			"<span>ad",
-			"an for",
-			"i>",
-			"adsda",
-			"<i>adsda</i>",
-			"simplified",
-			"button",
-			"808d9d",
-			"header",
-			"button",
-			"line-height: 1.33em"
+			"</h3>	"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -908,7 +924,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -917,15 +933,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2484,
+						"buffer_size": 3997,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1880,
-								1880
+								3458,
+								3458
 							]
 						],
 						"settings":
@@ -934,27 +950,85 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wwwroot/stylesheets/lianlian.css",
+					"file": "wwwroot/htmls/ad-private-msg--index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21966,
+						"buffer_size": 2218,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21608,
-								21608
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wwwroot/htmls/_template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wwwroot/stylesheets/lianlian.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22503,
+								22503
 							]
 						],
 						"settings":
@@ -963,10 +1037,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7248.0,
+						"translation.y": 4454.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1014,7 +1088,7 @@
 	"project": "2014-09-003_lianlian-app-new-ui-ios.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
