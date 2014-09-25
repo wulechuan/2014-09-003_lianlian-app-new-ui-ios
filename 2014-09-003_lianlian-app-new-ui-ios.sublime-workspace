@@ -4,20 +4,56 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding"
+			],
+			[
+				"cl",
+				"clip"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"f",
+				"for	Attr"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
 				"bac",
-				"background-size"
+				"background-color"
+			],
+			[
+				"bo",
+				"border-style"
+			],
+			[
+				"ma",
+				"margin-top"
 			],
 			[
 				"font",
 				"font-style"
-			],
-			[
-				"pa",
-				"padding-left"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"fonts",
@@ -48,24 +84,12 @@
 				"right"
 			],
 			[
-				"c",
-				"class	Attr"
-			],
-			[
 				"h",
 				"href	Attr"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"fon",
 				"font-size"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"bor",
@@ -144,16 +168,8 @@
 				"border-bottom-width"
 			],
 			[
-				"f",
-				"font-size"
-			],
-			[
 				"Font",
 				"FontAwesome"
-			],
-			[
-				"co",
-				"content"
 			],
 			[
 				"backre",
@@ -412,10 +428,6 @@
 				"brandName"
 			],
 			[
-				"n",
-				"normal"
-			],
-			[
 				"_thi",
 				"_thisDataSet"
 			],
@@ -460,10 +472,6 @@
 				"background-color"
 			],
 			[
-				"bo",
-				"border-radius"
-			],
-			[
 				"border-col",
 				"border-color"
 			],
@@ -506,32 +514,16 @@
 			[
 				"gr",
 				"gridsColumns"
-			],
-			[
-				"occ",
-				"gridsOccupation"
-			],
-			[
-				"def",
-				"defaultExpansionOccupyRows"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "wwwroot/htmls/_template.html",
+			"file": "wwwroot/htmls/my-booth-customers-statistics.html",
 			"settings":
 			{
-				"buffer_size": 4768,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wwwroot/htmls/my-booth-customers-msg.html",
-			"settings":
-			{
-				"buffer_size": 1294,
+				"buffer_size": 2484,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +531,7 @@
 			"file": "wwwroot/stylesheets/lianlian.css",
 			"settings":
 			{
-				"buffer_size": 16439,
+				"buffer_size": 21966,
 				"line_ending": "Windows"
 			}
 		}
@@ -599,6 +591,13 @@
 	],
 	"file_history":
 	[
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-choosers.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-msg.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-customers-visitors.html",
+		"/D/Users/lechuan/Desktop/wlc-loading-hint.html",
+		"/D/Users/lechuan/Desktop/lianlian-logo-white-symbol-only.png",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/wlc-loading-hint.html",
+		"/D/Users/lechuan/Desktop/Give your inbox a personality with Advanced Rules in Outlook.com - Office Blogs.url",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step1.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying-step1.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-create-step3.html",
@@ -719,14 +718,7 @@
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/animate.css",
 		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo10-交互系统雏形/try-2.html",
 		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try3.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/2.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/index.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/ani1.html",
-		"/D/Users/lechuan/Desktop/wlc/share/wulechuan-web-front-end-demos-2014-08/wulechuan-demo10-交互系统雏形/try.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/try2.html",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/app-welcome.css",
-		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/stylesheets/lly-animation-toolkits.css"
+		"/D/p/LLY_local/2014-07-005_lianlian-app-ux-enhancements/2014-08-001_lianlian-app-ux/wwwroot/htmls/2.html"
 	],
 	"find":
 	{
@@ -753,6 +745,67 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"argument",
+			"switcher-",
+			"<label>",
+			"label>",
+			" /><lab",
+			"right",
+			"<canvas></canvas>",
+			"></div>",
+			"canvas",
+			"label",
+			"<p>",
+			"-msg",
+			"。这",
+			"info",
+			"p",
+			"h3",
+			"span",
+			"i",
+			".rows .row",
+			"3.5",
+			"1.75",
+			"-16-after",
+			"loading-dots-rotate",
+			",5,5",
+			"a(255",
+			"1.5",
+			"1.2",
+			"2.5",
+			".dots-12",
+			".12",
+			"360",
+			"(0d",
+			"15",
+			"3",
+			"22.25",
+			"1.25",
+			".5",
+			"-in-out",
+			"linear",
+			"360",
+			"1s",
+			"18",
+			"hint",
+			"180deg",
+			"359",
+			"1",
+			"10",
+			"0,0,0,",
+			"0,0,0",
+			"blue",
+			"yellow",
+			"rgba()",
+			"255",
+			"before",
+			"30",
+			"3",
+			"20",
+			"1rem",
+			"20%",
+			"3rem",
+			"before",
 			"</h3>	",
 			"url(.png)",
 			"</div>",
@@ -819,68 +872,7 @@
 			"808d9d",
 			"header",
 			"button",
-			"line-height: 1.33em",
-			"line-height: 1.5em;",
-			"1.5em",
-			" 1.5em",
-			"header",
-			"date",
-			"	color",
-			"und-colo",
-			"color",
-			"content",
-			"after",
-			"before",
-			"		font-size: ;",
-			"shen",
-			"song",
-			":before",
-			"song",
-			"bottom",
-			"button",
-			"label",
-			"authenticate-paper",
-			"\n	ba",
-			"label",
-			"margin",
-			"echo *",
-			"echo.",
-			"*",
-			"_regKeyValue",
-			"saveCurrentUserDesktopFolderTo",
-			"tempFolderRaw",
-			"ffmpegFolder",
-			"saveCurrentUserDesktopFolder",
-			"getCurrentUserDesktopFolder",
-			"_key",
-			"_keyValue",
-			"__tempDT",
-			"__tempDesktop",
-			"_desktopfolder",
-			"desktopfolder",
-			"__desktopReg",
-			"tempDesktopReg",
-			"DesktopReg",
-			"desktopreg",
-			"ddesktopreg",
-			"outputFileName",
-			"em",
-			"2",
-			"4",
-			"after",
-			":after",
-			":before",
-			"before",
-			"after",
-			"30px 30px",
-			"2",
-			"5",
-			"150%",
-			"750%",
-			"150%",
-			"2",
-			"5",
-			"bottom"
+			"line-height: 1.33em"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -916,88 +908,53 @@
 	"groups":
 	[
 		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "wwwroot/htmls/_template.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4768,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								425,
-								426
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2661.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wwwroot/htmls/my-booth-customers-msg.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1294,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1278,
-								1278
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 264.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
 			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "wwwroot/stylesheets/lianlian.css",
+					"buffer": 0,
+					"file": "wwwroot/htmls/my-booth-customers-statistics.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16439,
+						"buffer_size": 2484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7257,
-								7257
+								1880,
+								1880
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wwwroot/stylesheets/lianlian.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21608,
+								21608
 							]
 						],
 						"settings":
@@ -1006,10 +963,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3222.0,
+						"translation.y": 7248.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1032,18 +989,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1246,7 +1196,7 @@
 		[
 			[
 				"",
-				"D:\\p\\LLY_local\\2014-08-003_zhonglu-website\\2014-08-003_zhonglu-website\\2014-08-003_zhonglu-website.sublime-project"
+				"D:\\Users\\lechuan\\Desktop\\wlc\\GitHub\\wlcJS\\wwwroot\\wlc-js.sublime-project"
 			]
 		],
 		"width": 380.0

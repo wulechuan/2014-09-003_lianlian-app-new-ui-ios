@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="page-my-booth-customers-statistics">
+<head>
+	<meta charset="utf-8">
+	<title>连联wifi商家管理</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
+	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<section style="margin-bottom: 0;">
+			<div class="rows">
+				<a href="my-booth-customers-visitors.html" class="row taller menu">
+					<span>累计访问</span>
+					<span id="visitors-count"><strong>500</strong>人</span>
+					<span class="rightside">访客列表</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="graph-pies-block">
+			<legend>性别分布</legend>
+			<div class="pies-row">
+				<div class="pie-locator">
+					<div graph-pie id="graph-pie-male">
+						<div graph-pie-half="1"></div>
+						<div graph-pie-half="2"></div>
+						<label><strong>男</strong><br/>
+							<span id="graph-pie-data-male">0</span>%</label>
+					</div>
+				</div>
+				<div class="pie-locator">
+					<div graph-pie id="graph-pie-female">
+						<div graph-pie-half="1"></div>
+						<div graph-pie-half="2"></div>
+						<label><strong>女</strong><br/>
+							<span id="graph-pie-data-female">0</span>%</label>
+					</div>
+				</div>
+				<div class="pie-locator">
+					<div graph-pie id="graph-pie-unknown">
+						<div graph-pie-half="1"></div>
+						<div graph-pie-half="2"></div>
+						<label><strong>不详</strong><br/>
+							<span id="graph-pie-data-unknown">0</span>%</label>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="graph-columns-block">
+			<legend>时段平均分布（人数）</legend>
+			<div id="switcher-graph-columns-visitors">
+				<input type="radio" name="visitors" value="workdays" id="vistors-option-1" /><label for="vistors-option-1">平时</label>
+				<input type="radio" name="visitors" value="weekends" id="vistors-option-2" /><label for="vistors-option-2">周末</label>
+			</div>
+			<div id="graph-columns-weekends" class="graph-columns">
+				<canvas></canvas>
+			</div>
+			<div id="graph-columns-workdays" class="graph-columns">
+				<canvas></canvas>
+			</div>
+		</section>
+	</main>
+
+	<script src="../scripts/this-app/lianlian-app.js"></script>
+
+	<script id="js-graphs-pies">
+		var graphPieControllers = [];
+
+		graphPieControllers[0] = CreateGraphPieController(
+			document.querySelector('#graph-pie-male'),
+			{
+				dataElement: document.querySelector('#graph-pie-data-male'),
+				dataValue: 0.07
+				// ,onupdate: function () { console.log(this.dataValue, this.arcAngle); }
+			}
+		);
+
+		graphPieControllers[1] = CreateGraphPieController(
+			document.querySelector('#graph-pie-female'),
+			{
+				dataElement: document.querySelector('#graph-pie-data-female'),
+				dataValue: 0.72
+			}
+		);
+
+		graphPieControllers[2] = CreateGraphPieController(
+			document.querySelector('#graph-pie-unknown'),
+			{
+				dataElement: document.querySelector('#graph-pie-data-unknown'),
+				dataValue: 0.51
+			}
+		);
+
+
+
+		// please delete codes below, cause they are simply codes for demo
+		(function () { // GraphPieController sample codes
+			// you may update by ratio
+			graphPieControllers[0].update(0.4);
+
+			// or update by endAngel
+			graphPieControllers[1].updateByAngles(undefined, 19);
+
+			// graphPieControllers[2].update(0.15, 20); // you may set startAngel a value other than zero.
+		})();
+	</script>
+
+	<script id="js-graphs-columns">
+		var graphColumnsFisrtShow = 1; // 1: 周末; 0: 平时
+
+		var columnGraphs = Array.prototype.slice.apply(document.querySelectorAll('.graph-columns'));
+
+
+
+		var switcherForGraphs = CreateLLYSwitcherController(
+			document.querySelector('#switcher-graph-columns-visitors'),
+			{
+				switchTo: graphColumnsFisrtShow,
+				onswitch: function () {
+					// console.log('[',this.checked, ']', this.checkedValue);
+					switchToGraph(this.checked);
+				}
+			}
+		);
+
+
+
+		function switchToGraph(i) { columnGraphs[i].style.display = '', columnGraphs[1-i].style.display = 'none'; }
+	</script>
+</body>
+</html>
