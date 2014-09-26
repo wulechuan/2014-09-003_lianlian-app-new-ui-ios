@@ -71,7 +71,7 @@
 	<script id="js-graphs-pies">
 		var graphPieControllers = [];
 
-		graphPieControllers[0] = CreateGraphPieController(
+		graphPieControllers[0] = CreateLLyGraphPieController(
 			document.querySelector('#graph-pie-male'),
 			{
 				dataElement: document.querySelector('#graph-pie-data-male'),
@@ -80,7 +80,7 @@
 			}
 		);
 
-		graphPieControllers[1] = CreateGraphPieController(
+		graphPieControllers[1] = CreateLLyGraphPieController(
 			document.querySelector('#graph-pie-female'),
 			{
 				dataElement: document.querySelector('#graph-pie-data-female'),
@@ -88,7 +88,7 @@
 			}
 		);
 
-		graphPieControllers[2] = CreateGraphPieController(
+		graphPieControllers[2] = CreateLLyGraphPieController(
 			document.querySelector('#graph-pie-unknown'),
 			{
 				dataElement: document.querySelector('#graph-pie-data-unknown'),

@@ -34,7 +34,74 @@
 
 
 
+#popup-layers {
+	display: block;
+	position: fixed;
 
+	box-sizing: border-box;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 0;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	z-index: 800;
+
+	overflow: visible!important;
+}
+
+#popup-layers .help-images {
+	display: none;
+	position: fixed;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+#popup-layers .help-images i {
+	display: block;
+	position: absolute;
+
+	width: 90%;
+	height: 90%;
+	left: 0;
+	top: 0;
+
+	margin: 5%;
+	padding: 0;
+	border: 0;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#backplate {
+	display: none;
+	position: fixed;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+
+}
 
 button,
 input,
@@ -96,6 +163,20 @@ strong > a:visited {
 	color: #acacac;
 }
 
+.help-link,
+.help-link a:link,
+.help-link a:active,
+.help-link a:visited {
+	color: #4594ff;
+	text-decoration: none;
+	font-size: 0.8rem;
+	height: 1.5em;
+	line-height: normal;
+}
+
+.center {
+	text-align: center;
+}
 .rightside {
 	text-align: right;
 }
@@ -127,7 +208,58 @@ main > section.margin-top {
 }
 
 main > section.button {
-	margin: 2rem 0;
+	margin: 0;
+	padding: 2rem 0 1rem 0;
+	}
+
+	main > section.button button {
+		margin: 0.25em 0;
+		padding: 0;
+	}
+
+
+
+main > section.message {
+	border: 1px solid transparent;
+	border-width: 1px 0;
+	margin-bottom: 0;
+	padding: 0.5em 0;
+}
+
+main > section.ads-list {
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+	}
+
+
+	main > section.ads-list:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1em;
+
+		position: absolute;
+		left: 0;
+
+		background-image: linear-gradient(to bottom,
+			transparent 0%,
+			rgba(245, 246, 248, 0.1) 25%,
+			rgba(245, 246, 248, 0.3) 45%, #f5f6f8 90%
+		);
+		z-index: 10;
+		bottom: 0;
+	}
+
+.scroller {
+	height: 100%;
+	max-height: 18em;
+	overflow-y: auto;
+}
+
+.scroller section:last-of-type {
+	margin-bottom: 9em;
 }
 
 
@@ -142,22 +274,28 @@ button {
 	button:before,
 	button:after {
 		display: inline-block;
-		vertical-align: middle;
 	}
 
-	button.ok:after {
-		content: '确定';
-	}
-
-	button.create-new-ad:before {
+	button.icon-plus:before {
 		font-family: 'FontAwesome';
 		content: '+';
-		font-size: 1.5rem;
+
+		font-size: 1.5em;
+		margin-right: 0.05em;
+		vertical-align: baseline;
 	}
 
-	button.create-new-ad:after {
-		content: '添加图文广告';
+	button.help-link {
+		background-color: transparent;
 	}
+
+	button.cancel {
+		color: #434d57;
+		background-color: #e3e4e8;
+	}
+
+
+
 
 select {
 	background-color: none;
@@ -244,13 +382,17 @@ select {
 
 	.rows .row input,
 	.rows .row textarea {
-			/*color: #818d9e;*/
-			border: none;
+		/*color: #818d9e;*/
+		border: none;
 		}
 
 		.rows .row input {
 			margin: 0;
 			width: 14em;
+		}
+
+		.rows .row input[type='checkbox'] {
+			width: auto;
 		}
 
 		.rows .row .text-area-container {
@@ -344,33 +486,42 @@ select {
 
 
 
-
-		.rows .row.article,
-		.rows .row.taller {
-			height: auto;
+	.rows .row.wifi-type {
 		}
 
-		.rows .row.article {
-			padding: 1em 0 0.5em;
-		}
-
-		.rows .row.article label,
-		.rows .row label.free-length {
-			width: auto;
-		}
-
-		.rows .row.article label {
-			display: block;
-			line-height: 1em;
+		.rows .row.wifi-type .rightside {
+			color: #818d9e;
 		}
 
 
 
 
+	.rows .row.article,
+	.rows .row.taller {
+		height: auto;
+	}
 
-		.rows .row.dual-columns {
-			font-size: 0;
-			line-height: 0;
+	.rows .row.article {
+		padding: 1em 0 0.5em;
+	}
+
+	.rows .row.article label,
+	.rows .row label.free-length {
+		width: auto;
+	}
+
+	.rows .row.article label {
+		display: block;
+		line-height: 1em;
+	}
+
+
+
+
+
+	.rows .row.dual-columns {
+		font-size: 0;
+		line-height: 0;
 		}
 
 		.rows .row.dual-columns > aside {
@@ -603,6 +754,32 @@ select {
 			background-size: cover;
 			margin-bottom: 1em;
 		}
+
+
+
+.rows .row *[ad-status] {
+	}
+
+	.rows .row *[ad-status='zan-wu-ti-jiao']:before {
+		content: '暂无提交';
+		color: #818d9e;
+	}
+
+	.rows .row *[ad-status='deng-dai-shen-he']:before {
+		content: '等待审核';
+		color: #4594ff;
+	}
+
+	.rows .row *[ad-status='shen-he-tong-guo']:before {
+		content: '审核通过';
+		color: #22c78b;
+	}
+
+	.rows .row *[ad-status='shen-he-shi-bai']:before {
+		content: '审核失败';
+		color: red;
+	}
+
 
 
 
@@ -871,6 +1048,7 @@ article .small-font {
 
 
 section.ad {
+	font-size: 0.7rem;
 	box-sizing: border-box;
 	margin: 0.75rem;
 	background-color: white;
@@ -898,7 +1076,7 @@ section.ad {
 		height: 2em;
 		z-index: 2;
 
-		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.16);
 	}
 
 	section.ad:after {
@@ -945,6 +1123,7 @@ section.ad {
 	}
 
 	section.ad > header {
+		clear: both;
 		box-sizing: border-box;
 		width: 100%;
 		/*height: 3rem;*/
@@ -979,11 +1158,13 @@ section.ad {
 		color: black;
 		font-size: 0.8rem;
 		line-height: 1.5em;
+		clear: both;
 		}
 
 		section.ad > article h1 {
 			font-size: 1rem;
 			line-height: 1.5em;
+			margin: 0.75em 0 0.5em;
 		}
 
 		section.ad > article img {
@@ -993,6 +1174,13 @@ section.ad {
 			background-color: #678;
 		}
 
+		section.ad.abstract > article img {
+			width: 4.5rem;
+			height: 4.5rem;
+			float: left;
+			margin: 0 0.5rem 0.5rem 0;
+		}
+
 
 	section.ad > footer {
 		box-sizing: border-box;
@@ -1000,6 +1188,7 @@ section.ad {
 		min-height: 2.8rem;
 
 		padding: 0.75em 1em;
+		clear: both;
 		}
 
 		section.ad > footer button {
@@ -1264,6 +1453,99 @@ section.ad {
 
 
 
+*[lly-pretty-checkbox] {
+	font-size: 1rem;
+
+	display: block;
+	width: 3em;
+	height: 1.5em;
+
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	margin-top: -0.75em;
+	border-radius: 0.75em;
+
+	color: white;
+	}
+
+	*[lly-pretty-checkbox] input[type="checkbox"] {
+		width: 1em;
+		height: 2em;
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		top: 0;
+		left: -1em;
+		clip: rect(0,0,0,0);
+	}
+
+	*[lly-pretty-checkbox]:before {
+		content: '';
+		display: block;
+		box-sizing: border-box;
+		width: 1.3em;
+		height: 1.3em;
+
+		position: absolute;
+		top: 0.1em;
+
+		border-radius: 50%;
+		background-color: white;
+	}
+
+	*[lly-pretty-checkbox]:after {
+		font-size: 0.75em;
+		display: block;
+		box-sizing: border-box;
+		width: 4em;
+		height: 100%;
+		line-height: 2em;
+
+		position: absolute;
+		top: 0;
+	}
+
+
+
+
+	*[lly-pretty-checkbox] {
+		background-color: #f48282;
+	}
+
+	*[lly-pretty-checkbox][checked] {
+		background-color: #16a1a4;
+	}
+
+
+	*[lly-pretty-checkbox]:before {
+		left: 0.1em;
+		right: auto;
+	}
+
+	*[lly-pretty-checkbox][checked]:before {
+		left: auto;
+		right: 0.1em;
+	}
+
+	*[lly-pretty-checkbox]:after {
+		content: 'OFF';
+		left: auto;
+		right: 0.2em;
+		text-align: right;
+	}
+
+	*[lly-pretty-checkbox][checked]:after {
+		content: 'ON';
+		left: 0.2em;
+		right: auto;
+		text-align: left;
+	}
+
+
+
+
+
 *[graph-pie] {
 	box-sizing: border-box;
 	display: inline-block;
@@ -1467,3 +1749,7 @@ section.ad {
 		.page-my-booth-customers-statistics .graph-columns-block .graph-columns#graph-columns-weekends canvas {
 			background-color: lightgreen;
 		}
+
+
+
+

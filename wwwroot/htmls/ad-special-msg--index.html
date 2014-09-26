@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN" class="page-msg page-private-msg">
+<html lang="zh-CN" class="page-msg page-special-msg">
 <head>
 	<meta charset="utf-8">
 	<title>连联wifi商家管理</title>
@@ -12,39 +12,33 @@
 	<header></header>
 	<main>
 		<section class="message">
-			<article><p>你本月还能群发<em>2</em>条消息，为了保证正常发送，请你 确保有足够的群发数量。</p></article>
+			<article><button class="help-link">点击查看帮助</button></article>
 		</section>
 			
 		<section class="ads-list">
 			<div class="scroller">
-				<section class="ad" ad-status="yi-fa-song">
+				<section class="ad abstract" ad-status="yi-fa-song">
 					<header>
-						<h3>群发对象：一群人</h3>
 						<time>2014-09-23</time>
 					</header>
 					<article>
-						<h1>wulechuan</h1>
-						<img src="adafas" height="160" />
-						<p>指身边购是一款基于LBS的移动购于LBS的移动购于LBS的移动购物平台，让消费者能够在碎片时间里轻松获取身边超市购物资讯。拇指身边购以网上下支付两种模式为核</p>
+						<p>进店消费30元，立减5元。</p>
 					</article>
 					<footer>
-						<button ad-action="create-new">再发一条</button>
+						<button ad-action="distribute">发布广告</button>
 						<button class="trash-bin"></button>
 					</footer>
 				</section>
 
-				<section class="ad" ad-status="bei-bo-hui">
+				<section class="ad abstract" ad-status="bei-bo-hui">
 					<header>
-						<h3>群发对象：一群人</h3>
 						<time>2014-09-23</time>
 					</header>
 					<article>
-						<h1>afdasofs</h1>
-						<img src="adafas" height="160" />
-						<p>指身边购是一款基于LBS的移动购于LBS的移动购于LBS的移动购物平台，让消费者能够在碎片时间里轻松获取身边超市购物资讯。拇指身边购以网上下支付两种模式为核</p>
+						<p>满238元就送价值168元的美女特别服务1夜。</p>
 					</article>
 					<footer>
-						<button ad-action="create-new">再发一条</button>
+						<button ad-action="distribute">发布广告</button>
 						<button class="trash-bin"></button>
 					</footer>
 				</section>
@@ -54,15 +48,36 @@
 		<section class="button">
 			<article>
 				<div class="tooltip">
-					<p>针对性地群发促销信息，分别发送给各个收件人，带动销售，及更好地服务消费者。</P>
-					<P>你本月还能群发<em>2</em>条消息，为了保证正常发送，请你确保有足够的群发数量。</p>
+					<p>您可以定制Wi-Fi列表号外，向在Wi-Fi信号覆盖区域联连用户推送促销信息，吸引客流。</P>
+					<p>审核通过后，请选择【<em>发布广告</em>】将号外展示在Wi-Fi列表。</p>
+					<p>每周最多添加<em>1</em>条号外，最多展示<em>1</em>条号外。</P>
 				</div>
-				<button>创建群发私信</button>
+				<button>创建号外广告</button>
 			</article>
 		</section>
 	</main>
+
+	<section id="popup-layers">
+		<div id="backplate"></div>
+		<div class="help-images">
+			<i style="background-image: url(../images/helps/help-special.png);"></i>
+		</div>
+	</section>
+
 	<script src="../scripts/this-app/lianlian-app.js"></script>
 	<script>
+		var helpButton = document.querySelector('.help-link');
+		var helpImagesRoot = document.querySelector('.help-images');
+		var helpImages = Array.prototype.slice.apply(document.querySelectorAll('.help-images i'));
+
+		helpButton.addEventListener('click', function (event) { helpImagesRoot.style.display = 'block'; });
+		helpImages.forEach(function (h, i, helpImages) {
+			h.addEventListener('click', function (event) {
+				helpImagesRoot.style.display = '';
+			});
+		});
+
+
 		var adListContainer = document.querySelector('.ads-list .scroller');
 		var ads = Array.prototype.slice.apply(document.querySelectorAll('section.ad'));
 		var listMaxHeightSubtractSelectors = [

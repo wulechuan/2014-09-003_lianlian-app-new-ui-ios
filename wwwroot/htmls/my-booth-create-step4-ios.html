@@ -56,8 +56,13 @@
 	<script src="../scripts/this-app/lianlian-app.js"></script>
 	<script>
 		var buttonSubmit = document.body.querySelector('#button-submit');
-
 		buttonSubmit.addEventListener('click', function (event) {
+		});
+
+		var popupWindow1 = document.body.querySelector('#booth-categories-selector');
+		var buttonClosePopup = document.body.querySelector('#pop-button-ok');
+		buttonClosePopup.addEventListener('click', function (event) {
+			popupWindow1.style.display = 'none';
 		});
 	</script>
 </body>
