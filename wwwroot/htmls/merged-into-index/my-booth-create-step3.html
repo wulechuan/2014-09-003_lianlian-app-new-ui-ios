@@ -72,7 +72,7 @@
 	<script src="../scripts/this-app/lianlian-app.js"></script>
 	<script>
 		var buttonNextStep = document.body.querySelector('#button-next-step');
-		var nextStepUri = 'my-booth-create-step4' + (appEnv.isIOS ? '-ios' : '-android') + '.html';
+		var nextStepUri = 'my-booth-create-step4' + (thisApp.env.os.ios ? '-ios' : '-android') + '.html';
 
 		buttonNextStep.addEventListener('click', function (event) {
 			window.location.assign(nextStepUri);

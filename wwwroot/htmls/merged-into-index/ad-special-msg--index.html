@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN" class="page-msg page-regular-msg">
+<html lang="zh-CN" class="page-msg page-special-msg">
 <head>
 	<meta charset="utf-8">
 	<title>连联wifi商家管理</title>
@@ -22,7 +22,7 @@
 						<time>2014-09-23</time>
 					</header>
 					<article>
-						<p>仅售168元！价值238元的火疗养生法1次，男女不限，提供免费WiFi。免费提供茶水，乐享生活。</p>
+						<p>进店消费30元，立减5元。</p>
 					</article>
 					<footer>
 						<button ad-action="distribute">发布广告</button>
@@ -35,8 +35,7 @@
 						<time>2014-09-23</time>
 					</header>
 					<article>
-						<img src="asafsd" />
-						<p>仅售168元！价值238元的火疗养生法1次，男女不限，提供免费WiFi。免费提供茶水，乐享生活。</p>
+						<p>满238元就送价值168元的美女特别服务1夜。</p>
 					</article>
 					<footer>
 						<button ad-action="distribute">发布广告</button>
@@ -49,11 +48,11 @@
 		<section class="button">
 			<article>
 				<div class="tooltip">
-					<p>你可以在商户主页，展示品牌形象或促销信息。</p>
-					<p>审核通过后，请选择【<em>发布广告</em>】将广告展示在商家主页。</p>
-					<p>每月最多添加<em>5</em>条，最多同时展示<em>5</em>条图文广告。</P>
+					<p>您可以定制Wi-Fi列表号外，向在Wi-Fi信号覆盖区域联连用户推送促销信息，吸引客流。</P>
+					<p>审核通过后，请选择【<em>发布广告</em>】将号外展示在Wi-Fi列表。</p>
+					<p>每周最多添加<em>1</em>条号外，最多展示<em>1</em>条号外。</P>
 				</div>
-				<button>创建图文广告</button>
+				<button>创建号外广告</button>
 			</article>
 		</section>
 	</main>
@@ -61,7 +60,7 @@
 	<section id="popup-layers">
 		<div id="backplate"></div>
 		<div class="help-images">
-			<i style="background-image: url(../images/helps/help-regular.png);"></i>
+			<i style="background-image: url(../images/helps/help-special.png);"></i>
 		</div>
 	</section>
 
@@ -89,15 +88,15 @@
 
 
 		// test: try to delete all hard-coded elements and show tooltip
-		// var _a = ads.slice(); _a.forEach(function(e, i) {e.parentNode.removeChild(e); ads.splice(0,1); });
+		var _a = ads.slice(); _a.forEach(function(e, i) {e.parentNode.removeChild(e); ads.splice(0,1); });
 
 
 		window.addEventListener('resize', decideAdsListContainerMaxHeight);
 		setTimeout(decideAdsListContainerMaxHeight, 1);
-		tryShowButtonSectionTooltip(ads.length <= 0);
+		thisApp.tryShowButtonSectionTooltip(ads.length <= 0);
 
 
-		function decideAdsListContainerMaxHeight() { setMaxHeight(adListContainer, listMaxHeightSubtractSelectors); }
+		function decideAdsListContainerMaxHeight() { thisApp.setMaxHeight(adListContainer, listMaxHeightSubtractSelectors); }
 	</script>
 </body>
 </html>

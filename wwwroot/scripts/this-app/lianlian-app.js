@@ -10,62 +10,120 @@
 	delete _fakeHeader;
 })();
 
+(function () {
+	function uaHas(inString)          { return navigator.userAgent.search(inString) >= 0; }
+	function uaHasNot(inString)       { return navigator.userAgent.search(inString) <  0; }
+	function platformHas(inString)    { return navigator.platform.search(inString)  >= 0; }
+	function platformHasNot(inString) { return navigator.platform.search(inString)  <  0; }
 
-
-var appEnv = {
-	isIOS: true
-};
-
-
-function setMaxHeight(element, subtractSelectors) {
-	subtractSelectors = subtractSelectors || [];
-	var _subtractHeights = [];
-	var _subtractHeightTotal = 0;
-	for (var _s = 0; _s < subtractSelectors.length; _s++) {
-		var _el = subtractSelectors[_s];
-		if (!(_el instanceof HTMLElement)) {
-			_el = document.querySelector( _el );
+	window.thisApp = {
+		env: {
+			os: {
+				ios: uaHas('like Mac OS X;') && platformHasNot('Win32'),
+				android: uaHas('Android') || platformHas('Linux arm')
+			}
 		}
-		var _elHeight = !!_el ? parseFloat(_el.offsetHeight) : 0;
-		// var _elHeight = !!_el ? parseFloat(window.getComputedStyle(_el).height) : 0;
-		_subtractHeights[_s] = _elHeight;
-		_subtractHeightTotal += _elHeight;
-	};
-
-	var _maxHeight = Math.max(0, (window.innerHeight - _subtractHeightTotal));
-	// console.log(window.innerHeight + ' - [', _subtractHeights.join(', '), '] = ' + _maxHeight);
-
-	if (_maxHeight > 0) element.style.maxHeight = _maxHeight + 'px';
-};
-
-
-function tryShowButtonSectionTooltip (toShowTooltip) {
-	var _buttonSection = document.querySelector('section.button');
-
-	_buttonSection.style.paddingTop = toShowTooltip ? '0px' : '';
-	_buttonSection.querySelector('.tooltip').style.display = toShowTooltip ? '' : 'none';
-};
-
-
-function updateAdStatus(element, status) {
-	// status:
-		// 0: 暂无提交
-		// 1: 等待审核
-		// 2: 审核通过
-		// 3: 审核失败
-
-	var _attr = false;
-
-	switch (status) {
-		case 0: _attr = 'zan-wu-ti-jiao';		break;
-		case 1: _attr = 'deng-dai-shen-he';		break;
-		case 2: _attr = 'shen-he-tong-guo';		break;
-		case 3: _attr = 'shen-he-shi-bai';		break;
-		default: break;
 	}
 
-	if (_attr) element.setAttribute('ad-status', _attr);
-};
+	window.thisApp.setMaxHeight = function (element, subtractSelectors) {
+		subtractSelectors = subtractSelectors || [];
+		var _subtractHeights = [];
+		var _subtractHeightTotal = 0;
+		for (var _s = 0; _s < subtractSelectors.length; _s++) {
+			var _el = subtractSelectors[_s];
+			if (!(_el instanceof HTMLElement)) {
+				_el = document.querySelector( _el );
+			}
+			var _elHeight = !!_el ? parseFloat(_el.offsetHeight) : 0;
+			// var _elHeight = !!_el ? parseFloat(window.getComputedStyle(_el).height) : 0;
+			_subtractHeights[_s] = _elHeight;
+			_subtractHeightTotal += _elHeight;
+		};
+
+		var _maxHeight = Math.max(0, (window.innerHeight - _subtractHeightTotal));
+		// console.log(window.innerHeight + ' - [', _subtractHeights.join(', '), '] = ' + _maxHeight);
+
+		if (_maxHeight > 0) element.style.maxHeight = _maxHeight + 'px';
+	};
+
+
+	window.thisApp.tryShowButtonSectionTooltip = function (buttonSection, toShowTooltip) {
+		buttonSection.style.paddingTop = toShowTooltip ? '0px' : '';
+		buttonSection.querySelector('.tooltip').style.display = toShowTooltip ? '' : 'none';
+	};
+
+
+	window.thisApp.updateAdStatus = function (element, status) {
+		// status:
+			// 0: 暂无提交
+			// 1: 等待审核
+			// 2: 审核通过
+			// 3: 审核失败
+
+		var _attr = false;
+
+		switch (status) {
+			case 0: _attr = 'zan-wu-ti-jiao';		break;
+			case 1: _attr = 'deng-dai-shen-he';		break;
+			case 2: _attr = 'shen-he-tong-guo';		break;
+			case 3: _attr = 'shen-he-shi-bai';		break;
+			default: break;
+		}
+
+		if (_attr) element.setAttribute('ad-status', _attr);
+	};
+})();
+
+
+
+
+
+function CreateLLYPagesController (initOptions) {
+	var _thisPageController = {
+		pages: [],
+		currentPage: undefined,
+		styleElement: undefined,
+
+		swipeTo: function (targetPage) { _swipeTo.call(this, targetPage); },
+		onwipestart: undefined,
+		onwipeend: undefined
+	}
+
+	return (function () {
+		if (!_init.call(this)) return undefined;
+		if (!_config.call(this, initOptions)) return undefined;
+		return this;
+	}).call(_thisPageController);
+
+	function _init () {
+		var _ok = true;
+		this.styleElement = document.createElement('style');
+		document.head.appendChild(this.styleElement);
+		return _ok;
+	}
+
+	function _config(options) {
+		var _ok = true;
+
+		options = options || {};
+
+		if (options.hasOwnProperty('onwipestart') && typeof options.onwipestart === 'function') {
+			this.onwipestart = options.onwipestart;
+		}
+
+		if (options.hasOwnProperty('onwipeend') && typeof options.onwipeend === 'function') {
+			this.onwipeend = options.onwipeend;
+		}
+
+		if (options.hasOwnProperty('pages') && Array.isArray(options.pages)) {
+			this.pages = this.pages.concate(options.pages);
+			console.warn('may has duplicated array elements');
+		}
+
+		return _ok;
+	}
+
+}; // Factory:CreateLLYPagesController
 
 
 function CreateLLyGraphPieController(rootElement, initOptions) {

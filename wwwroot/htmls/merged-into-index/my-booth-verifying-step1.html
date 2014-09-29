@@ -39,7 +39,7 @@
 	<script src="../scripts/this-app/lianlian-app.js"></script>
 	<script>
 		var buttonSubmit = document.body.querySelector('#button-submit');
-		var nextStepUri = 'my-booth-verifying-step2' + (appEnv.isIOS ? '' : '') + '.html';
+		var nextStepUri = 'my-booth-verifying-step2' + (thisApp.env.os.ios ? '' : '') + '.html';
 
 		buttonSubmit.addEventListener('click', function (event) {
 			window.location.assign(nextStepUri);

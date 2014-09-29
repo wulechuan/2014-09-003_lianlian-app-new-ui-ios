@@ -199,8 +199,8 @@
 
 		myBoothCategoryRow.addEventListener('click', function (event) {
 			// popup a window
-			alert('美食 西餐厅');
 			var category = '美食 西餐厅'
+			alert('从弹窗中选择了wifi类别为：' + category);
 			myBoothCategory.innerHTML = category;
 		});
 
@@ -208,8 +208,8 @@
 
 
 		var buttonNextStep = document.body.querySelector('#button-next-step');
-		// var nextStepUri = 'my-booth-create-step2' + (appEnv.isIOS ? '-ios' : '-android') + '.html';
-		var nextStepUri = 'my-booth-create-step2' + (appEnv.isIOS ? '' : '') + '.html';
+		// var nextStepUri = 'my-booth-create-step2' + (thisApp.env.os.ios ? '-ios' : '-android') + '.html';
+		var nextStepUri = 'my-booth-create-step2' + (thisApp.env.os.ios ? '' : '') + '.html';
 
 		buttonNextStep.addEventListener('click', function (event) {
 			window.location.assign(nextStepUri);

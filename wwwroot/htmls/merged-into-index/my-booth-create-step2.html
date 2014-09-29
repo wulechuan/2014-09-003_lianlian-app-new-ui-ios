@@ -55,8 +55,8 @@
 	<script src="../scripts/this-app/lianlian-app.js"></script>
 	<script>
 		var buttonNextStep = document.body.querySelector('#button-next-step');
-		// var nextStepUri = 'my-booth-create-step3' + (appEnv.isIOS ? '-ios' : '-android') + '.html';
-		var nextStepUri = 'my-booth-create-step3' + (appEnv.isIOS ? '' : '') + '.html';
+		// var nextStepUri = 'my-booth-create-step3' + (thisApp.env.os.ios ? '-ios' : '-android') + '.html';
+		var nextStepUri = 'my-booth-create-step3' + (thisApp.env.os.ios ? '' : '') + '.html';
 
 		buttonNextStep.addEventListener('click', function (event) {
 			window.location.assign(nextStepUri);

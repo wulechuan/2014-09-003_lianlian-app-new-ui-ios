@@ -78,10 +78,10 @@
 
 		window.addEventListener('resize', decideAdsListContainerMaxHeight);
 		setTimeout(decideAdsListContainerMaxHeight, 1);
-		tryShowButtonSectionTooltip(ads.length <= 0);
+		thisApp.tryShowButtonSectionTooltip(ads.length <= 0);
 
 
-		function decideAdsListContainerMaxHeight() { setMaxHeight(adListContainer, listMaxHeightSubtractSelectors); }
+		function decideAdsListContainerMaxHeight() { thisApp.setMaxHeight(adListContainer, listMaxHeightSubtractSelectors); }
 	</script>
 </body>
 </html>
