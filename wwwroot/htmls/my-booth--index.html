@@ -1,18 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
 	<title>连联wifi商家管理</title>
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/jquery.mobile.custom.structure.min.css"/>
 	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
 	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/vendors/jquery.mobile.custom.min.js"></script>
 </head>
 
 <body>
 	<header></header>
 
 	<main>
-		<div lly-page-visibility="shown" lly-page="index">
+		<div lly-page data-url="page-index">
 			<section class="statistics">
 				<div class="rows">
 					<div class="row taller dual-columns">
@@ -24,49 +26,49 @@
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="booth"></i>我的商家信息</div>
-					<div class="row menu"><i icon-face="email"></i>客户留言</div>
-					<div class="row menu"><i icon-face="my-wifi"></i>我的热点</div>
+					<a href="#page-my-booth-info" class="row menu"><i icon-face="booth"></i>我的商家信息</a>
+					<a href="#page-customers-messages" class="row menu"><i icon-face="email"></i>客户留言</a>
+					<a href="#page-wifi-hot-spots-list-choose" class="row menu"><i icon-face="my-wifi"></i>我的热点</a>
 				</div>
 			</section>
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="loudspeaker"></i>我要发布Wi-Fi列表号外广告</div>
+					<a href="#page-my-booth-text-ad-list" class="row menu"><i icon-face="loudspeaker"></i>我要发布Wi-Fi列表号外广告</a>
 				</div>
 				<article><p>联连用户在商户Wi-Fi信号覆盖区域时，通过【号外】推送商户信息，吸引客流。</p></article>
 			</section>
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="picture"></i>我要发布商户主页图文广告</div>
+					<a href="#page-my-booth-rich-ad-list" class="row menu"><i icon-face="picture"></i>我要发布商户主页图文广告</a>
 				</div>
 				<article><p>商户专属登录页广告展示。自主订制，展示品牌形象或促销信息。</p></article>
 			</section>
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="msn-people"></i>群发营销信息</div>
+					<a href="#page-my-booth-private-ad-list" class="row menu"><i icon-face="msn-people"></i>群发营销信息</a>
 				</div>
 				<article><p>针对性地群发促销信息，分别发送给各个收件人，带动销售，及更好地服务消费者。</p></article>
 			</section>
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="chain"></i>链接推广</div>
+					<a href="#page-my-booth-promo-link" class="row menu"><i icon-face="chain"></i>链接推广</a>
 				</div>
 				<article><p>设置跳转的URL地址，可以实现商户主页跳转到您设置的营销网页。</p></article>
 			</section>
 
 			<section>
 				<div class="rows">
-					<div class="row menu"><i icon-face="booth-arrow"></i>商家管理权限转移</div>
+					<a href="#page-my-booth-owner-verify-step-1" class="row menu"><i icon-face="booth-arrow"></i>商家管理权限转移</a>
 				</div>
 				<article><p>将商户转移到另一个联连账号进行管理，转移后该账户将恢复为普通帐号。</p></article>
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-info">
+		<div lly-page data-url="page-my-booth-info">
 			<section class="margin-top">
 				<div class="rows">
 					<div class="row">
@@ -109,7 +111,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-create-step-1">
+		<div lly-page data-url="page-my-booth-create-step-1">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li progress-step="current"></li>
@@ -176,7 +178,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-create-step-2">
+		<div lly-page data-url="page-my-booth-create-step-2">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -219,7 +221,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-create-step-3">
+		<div lly-page data-url="page-my-booth-create-step-3">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -279,7 +281,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-create-step-4-ios">
+		<div lly-page data-url="page-my-booth-create-step-4-ios">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -308,7 +310,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-create-step-4-android">
+		<div lly-page data-url="page-my-booth-create-step-4-android">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -337,7 +339,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-owner-verify-step-1">
+		<div lly-page data-url="page-my-booth-owner-verify-step-1">
 			<section class="progress">
 				<ol progress-steps="2">
 					<li progress-step="current"></li>
@@ -359,12 +361,12 @@
 
 			<section class="button">
 				<article>
-					<button class="submit">确定</button>
+					<a button href="#page-my-booth-owner-verify-step-2" class="submit">确定</a>
 				</article>
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-owner-verify-step-2">
+		<div lly-page data-url="page-my-booth-owner-verify-step-2">
 			<section class="progress">
 				<ol progress-steps="2">
 					<li></li>
@@ -391,7 +393,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-statistics">
+		<div lly-page data-url="page-my-booth-statistics">
 			<section style="margin-bottom: 0;">
 				<div class="rows">
 					<a href="my-booth-customers-visitors.html" class="row taller menu">
@@ -447,7 +449,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="customers-visitors">
+		<div lly-page data-url="page-customers-visitors">
 			<section>
 				<div class="rows">
 					<div class="row customer-info">
@@ -482,7 +484,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="customers-fans">
+		<div lly-page data-url="page-customers-fans">
 			<section>
 				<div class="rows">
 					<div class="row customer-info">
@@ -517,7 +519,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="customers-messages">
+		<div lly-page data-url="page-customers-messages">
 			<section>
 				<div class="rows">
 					<div class="row customer-msg">
@@ -552,7 +554,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-promo-link">
+		<div lly-page data-url="page-my-booth-promo-link">
 			<section>
 				<div class="rows">
 					<div class="row">
@@ -590,7 +592,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-text-ad-list">
+		<div lly-page data-url="page-my-booth-text-ad-list">
 			<section class="message">
 				<article><button class="help-link">点击查看帮助</button></article>
 			</section>
@@ -632,12 +634,12 @@
 						<p>审核通过后，请选择【<em>发布广告</em>】将号外展示在Wi-Fi列表。</p>
 						<p>每周最多添加<em>1</em>条号外，最多展示<em>1</em>条号外。</P>
 					</div>
-					<button>创建号外广告</button>
+					<a button href="#page-my-booth-text-ad-create">创建号外广告</a>
 				</article>
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-text-ad-create">
+		<div lly-page data-url="page-my-booth-text-ad-create">
 			<section>
 				<div class="rows">
 					<textarea placeholder="请输入您的号外广告正文"></textarea>
@@ -654,7 +656,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-rich-ad-list">
+		<div lly-page data-url="page-my-booth-rich-ad-list">
 			<section class="message">
 				<article><button class="help-link">点击查看帮助</button></article>
 			</section>
@@ -697,12 +699,12 @@
 						<p>审核通过后，请选择【<em>发布广告</em>】将广告展示在商家主页。</p>
 						<p>每月最多添加<em>5</em>条，最多同时展示<em>5</em>条图文广告。</P>
 					</div>
-					<button>创建图文广告</button>
+					<a button href="#page-my-booth-rich-ad-create">创建图文广告</a>
 				</article>
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-rich-ad-create">
+		<div lly-page data-url="page-my-booth-rich-ad-create">
 			<section>
 				<div class="rows">
 					<div class="row" style="margin-left: 0; padding-left: 1em;"><input required placeholder="标题" /></div>
@@ -733,7 +735,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-private-ad-list">
+		<div lly-page data-url="page-my-booth-private-ad-list">
 			<section class="message">
 				<article><p>你本月还能群发<em>2</em>条消息，为了保证正常发送，请你 确保有足够的群发数量。</p></article>
 			</section>
@@ -780,12 +782,12 @@
 						<p>针对性地群发促销信息，分别发送给各个收件人，带动销售，及更好地服务消费者。</P>
 						<P>你本月还能群发<em>2</em>条消息，为了保证正常发送，请你确保有足够的群发数量。</p>
 					</div>
-					<button>创建群发私信</button>
+					<a button href="#page-my-booth-private-ad-create">创建群发私信</a>
 				</article>
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="my-booth-private-ad-create">
+		<div lly-page data-url="page-my-booth-private-ad-create">
 			<section>
 				<div class="rows">
 					<textarea placeholder="请输入您的促销信息"></textarea>
@@ -809,7 +811,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="wifi-hot-spot-add-edit">
+		<div lly-page data-url="page-wifi-hot-spot-add-edit">
 			<section class="margin-top">
 				<div class="rows">
 					<div class="row required has-button">
@@ -829,7 +831,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="wifi-hot-spots-list-choose">
+		<div lly-page data-url="page-wifi-hot-spots-list-choose">
 			<section>
 				<div class="rows">
 					<div class="row wifi-spot">luluyou</div>
@@ -840,7 +842,7 @@
 			</section>
 		</div>
 
-		<div lly-page-visibility="hidden-rightside" lly-page="wifi-hot-spots-list-cloud-backup">
+		<div lly-page data-url="page-wifi-hot-spots-list-cloud-backup">
 			<section>
 				<div class="rows">
 					<div class="row menu wifi-type"><span>wlc-wifi</span><span class="rightside">家庭热点</span></div>
@@ -987,9 +989,9 @@
 	<script id="js-my-booth-create">
 		(function () {
 			[
-				document.querySelector('*[lly-page="my-booth-create-step-1"] button.next-step'),
-				document.querySelector('*[lly-page="my-booth-create-step-2"] button.next-step'),
-				document.querySelector('*[lly-page="my-booth-create-step-3"] button.next-step')
+				document.querySelector('*[data-url="page-my-booth-create-step-1"] button.next-step'),
+				document.querySelector('*[data-url="page-my-booth-create-step-2"] button.next-step'),
+				document.querySelector('*[data-url="page-my-booth-create-step-3"] button.next-step')
 			].forEach(function (button, i, buttons) {
 				var nextStep = i+2;
 				var nextStepUri = nextStep + (nextStep===4) ? ((thisApp.env.os.ios ? '-ios' : '-android')) : '';
@@ -1015,8 +1017,8 @@
 
 	<script id="js-my-booth-owner-verify">
 		(function () {
-			var pageStep1 = document.querySelector('*[lly-page="my-booth-owner-verify-step-1"]');
-			var pageStep2 = document.querySelector('*[lly-page="my-booth-owner-verify-step-2"]');
+			var pageStep1 = document.querySelector('*[data-url="page-my-booth-owner-verify-step-1"]');
+			var pageStep2 = document.querySelector('*[data-url="page-my-booth-owner-verify-step-2"]');
 
 			pageStep1.querySelector('button.submit').addEventListener('click', function (event) {
 				llyPagesController.swipeToPage(pageStep2);
@@ -1136,7 +1138,7 @@
 
 	<script id="js-text-ad">
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-text-ad-list"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-text-ad-list"]');
 
 
 
@@ -1175,13 +1177,13 @@
 		})();
 
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-text-ad-create"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-text-ad-create"]');
 		})();
 	</script>
 
 	<script id="js-rich-ad">
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-rich-ad-list"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-rich-ad-list"]');
 
 
 
@@ -1220,13 +1222,13 @@
 		})();
 
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-rich-ad-create"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-rich-ad-create"]');
 		})();
 	</script>
 
 	<script id="js-private-ad">
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-private-ad-list"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-private-ad-list"]');
 			var buttonSection = thisPage.querySelector('section.button');
 			var adListContainer = document.querySelector('.ads-list .scroller');
 			var ads = Array.prototype.slice.apply(document.querySelectorAll('section.ad'));
@@ -1250,7 +1252,7 @@
 		})();
 
 		(function () {
-			var thisPage = document.querySelector('*[lly-page="my-booth-private-ad-create"]');
+			var thisPage = document.querySelector('*[data-url="page-my-booth-private-ad-create"]');
 		})();
 	</script>
 </body>

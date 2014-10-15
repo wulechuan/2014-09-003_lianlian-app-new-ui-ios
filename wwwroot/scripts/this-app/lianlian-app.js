@@ -1,13 +1,27 @@
-(function () {
+(function () { // fake header
 	var _fakeHeader = document.querySelector('body > header');
 
-	_fakeHeader.addEventListener('click', function() {
-		window.location.assign('my-booth--index.html');
+	if (false) {
+		if (_fakeHeader) {
+			_fakeHeader.addEventListener('click', function() {
+				window.location.assign('my-booth--index.html');
+			});
+		}
+	} else {
+		document.body.removeChild(_fakeHeader);
+		delete _fakeHeader;
+	}
+})();
+
+(function () { // processAll pages
+	$('*[lly-page]').each(function (i) {
+		this.setAttribute('data-role', 'page');
 	});
-	
-	return false;
-	document.body.removeChild(_fakeHeader);
-	delete _fakeHeader;
+
+	// $('a').each(function (i) {
+	// 	this.setAttribute('data-transition', 'slide');
+	// });
+	$.mobile.defaultPageTransition = 'slide';
 })();
 
 (function () {
