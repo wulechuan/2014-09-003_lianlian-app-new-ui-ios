@@ -1,3 +1,7 @@
+var l = console.log.bind(console);
+var w = console.warn.bind(console);
+var e = console.error.bind(console);
+
 (function () { // fake header
 	var _fakeHeader = document.querySelector('body > header');
 
@@ -33,111 +37,326 @@
 	window.thisApp = {
 		env: {
 			os: {
-				ios: uaHas('like Mac OS X;') && platformHasNot('Win32'),
+				ios: uaHas('like Mac OS X') && platformHasNot('Win32'),
 				android: uaHas('Android') || platformHas('Linux arm')
 			}
-		}
-	}
+		},
 
-	window.thisApp.setMaxHeight = function (element, subtractSelectors) {
-		subtractSelectors = subtractSelectors || [];
-		var _subtractHeights = [];
-		var _subtractHeightTotal = 0;
-		for (var _s = 0; _s < subtractSelectors.length; _s++) {
-			var _el = subtractSelectors[_s];
-			if (!(_el instanceof HTMLElement)) {
-				_el = document.querySelector( _el );
+		setMaxHeight: function (element, subtractSelectors) {
+			subtractSelectors = subtractSelectors || [];
+			var _subtractHeights = [];
+			var _subtractHeightTotal = 0;
+			for (var _s = 0; _s < subtractSelectors.length; _s++) {
+				var _el = subtractSelectors[_s];
+				if (!(_el instanceof HTMLElement)) {
+					_el = document.querySelector( _el );
+				}
+				var _elHeight = !!_el ? parseFloat(_el.offsetHeight) : 0;
+				// var _elHeight = !!_el ? parseFloat(window.getComputedStyle(_el).height) : 0;
+				_subtractHeights[_s] = _elHeight;
+				_subtractHeightTotal += _elHeight;
+			};
+
+			var _maxHeight = Math.max(0, (window.innerHeight - _subtractHeightTotal));
+			// console.log(window.innerHeight + ' - [', _subtractHeights.join(', '), '] = ' + _maxHeight);
+
+			if (_maxHeight > 0) element.style.maxHeight = _maxHeight + 'px';
+		},
+
+
+		tryShowButtonSectionTooltip: function (buttonSection, toShowTooltip) {
+			buttonSection.style.paddingTop = toShowTooltip ? '0px' : '';
+			buttonSection.querySelector('.tooltip').style.display = toShowTooltip ? '' : 'none';
+		},
+
+
+		updateAdStatus: function (element, status) {
+			// status:
+				// 0: 暂无提交
+				// 1: 等待审核
+				// 2: 审核通过
+				// 3: 审核失败
+
+			var _attr = false;
+
+			switch (status) {
+				case 0: _attr = 'zan-wu-ti-jiao';		break;
+				case 1: _attr = 'deng-dai-shen-he';		break;
+				case 2: _attr = 'shen-he-tong-guo';		break;
+				case 3: _attr = 'shen-he-shi-bai';		break;
+				default: break;
 			}
-			var _elHeight = !!_el ? parseFloat(_el.offsetHeight) : 0;
-			// var _elHeight = !!_el ? parseFloat(window.getComputedStyle(_el).height) : 0;
-			_subtractHeights[_s] = _elHeight;
-			_subtractHeightTotal += _elHeight;
-		};
 
-		var _maxHeight = Math.max(0, (window.innerHeight - _subtractHeightTotal));
-		// console.log(window.innerHeight + ' - [', _subtractHeights.join(', '), '] = ' + _maxHeight);
-
-		if (_maxHeight > 0) element.style.maxHeight = _maxHeight + 'px';
-	};
-
-
-	window.thisApp.tryShowButtonSectionTooltip = function (buttonSection, toShowTooltip) {
-		buttonSection.style.paddingTop = toShowTooltip ? '0px' : '';
-		buttonSection.querySelector('.tooltip').style.display = toShowTooltip ? '' : 'none';
-	};
-
-
-	window.thisApp.updateAdStatus = function (element, status) {
-		// status:
-			// 0: 暂无提交
-			// 1: 等待审核
-			// 2: 审核通过
-			// 3: 审核失败
-
-		var _attr = false;
-
-		switch (status) {
-			case 0: _attr = 'zan-wu-ti-jiao';		break;
-			case 1: _attr = 'deng-dai-shen-he';		break;
-			case 2: _attr = 'shen-he-tong-guo';		break;
-			case 3: _attr = 'shen-he-shi-bai';		break;
-			default: break;
+			if (_attr) element.setAttribute('ad-status', _attr);
 		}
-
-		if (_attr) element.setAttribute('ad-status', _attr);
 	};
+})();
+
+(function () { // page-my-booth-create
+	[
+		document.querySelector('*[data-url="page-my-booth-create-step-1"] button.next-step'),
+		document.querySelector('*[data-url="page-my-booth-create-step-2"] button.next-step'),
+		document.querySelector('*[data-url="page-my-booth-create-step-3"] button.next-step')
+	].forEach(function (button, i, buttons) {
+		var nextStep = i+2;
+		var nextStepUri = nextStep + ((nextStep===4) ? ((thisApp.env.os.ios ? '-ios' : '-android')) : '');
+			nextStepUri = 'my-booth-create-step' + nextStepUri + '.html';
+		l(nextStepUri);
+		button.addEventListener('click', function (event) {
+		});
+	});
+
+
+	var myBoothCategoryRow = document.querySelector('#my-booth-create-select-category');
+	var myBoothCategory = document.querySelector('#my-booth-create-category');
+
+	myBoothCategoryRow.addEventListener('click', function (event) {
+
+		console.error('Logics are *FAKE*! Please popup a window and fetch real data by AJAX.');
+		var category = '美食 西餐厅'; alert('从弹窗中选择了wifi类别为：' + category);
+
+		myBoothCategory.innerHTML = category;
+	});
+})();
+
+
+(function () { // page-my-booth-owner-verify
+	var pageStep1 = document.querySelector('*[data-url="page-my-booth-owner-verify-step-1"]');
+	var pageStep2 = document.querySelector('*[data-url="page-my-booth-owner-verify-step-2"]');
+
+	// pageStep1.querySelector('[button].submit').addEventListener('click', function (event) {
+	// });
+
+	// pageStep2.querySelector('button.submit').addEventListener('click', function (event) {
+	// });
+})();
+
+
+(function () { // page-my-booth-statistics-graphs-pies
+	var graphPieControllers = [];
+
+	graphPieControllers[0] = CreateLLyGraphPieController(
+		document.querySelector('#my-booth-statistics-graph-pie-male'),
+		{
+			dataElement: document.querySelector('#my-booth-statistics-graph-pie-data-male'),
+			dataValue: 0.07
+			// ,onupdate: function () { console.log(this.dataValue, this.arcAngle); }
+		}
+	);
+
+	graphPieControllers[1] = CreateLLyGraphPieController(
+		document.querySelector('#my-booth-statistics-graph-pie-female'),
+		{
+			dataElement: document.querySelector('#my-booth-statistics-graph-pie-data-female'),
+			dataValue: 0.72
+		}
+	);
+
+	graphPieControllers[2] = CreateLLyGraphPieController(
+		document.querySelector('#my-booth-statistics-graph-pie-unknown'),
+		{
+			dataElement: document.querySelector('#my-booth-statistics-graph-pie-data-unknown'),
+			dataValue: 0.51
+		}
+	);
+
+
+
+	// please delete codes below, cause they are simply codes for demo
+	(function () { // GraphPieController sample codes
+		console.warn('Test codes here.');
+		// you may update by ratio
+		graphPieControllers[0].update(0.4);
+
+		// or update by endAngel
+		graphPieControllers[1].updateByAngles(undefined, 19);
+
+		// graphPieControllers[2].update(0.15, 20); // you may set startAngel a value other than zero.
+	})();
+})();
+
+
+(function () { // page-my-booth-statistics-graphs-columns
+	var graphColumnsFisrtShow = 1; // 1: 周末; 0: 平时
+	var columnGraphs = Array.prototype.slice.apply(document.querySelectorAll('.graph-columns'));
+
+	var switcherForGraphs = CreateLLYSwitcherController(
+		document.querySelector('#switcher-graph-columns-visitors'),
+		{
+			switchTo: graphColumnsFisrtShow,
+			onswitch: function () {
+				// console.log('[',this.checked, ']', this.checkedValue);
+				switchToGraph(this.checked);
+			}
+		}
+	);
+
+	function switchToGraph(i) { columnGraphs[i].style.display = '', columnGraphs[1-i].style.display = 'none'; }
+})();
+
+
+(function () { // page-my-booth-promo-link
+	var helpButton = document.querySelector('.help-link');
+	var helpImagesRoot = document.querySelector('.help-images');
+	var helpImages = Array.prototype.slice.apply(document.querySelectorAll('.help-images i'));
+
+	helpButton.addEventListener('click', function (event) { helpImagesRoot.style.display = 'block'; });
+	helpImages.forEach(function (h, i, helpImages) {
+		h.addEventListener('click', function (event) { helpImagesRoot.style.display = ''; });
+	});
+
+
+
+
+
+	var allOptionContents = Array.prototype.slice.apply(document.querySelectorAll('*[option-content]'));
+	var prettyCheckboxController = CreateLLYPrettyCheckboxController(
+		document.querySelector('#pretty-checkbox-promotion-link'),
+		{
+			// checked: true,
+			onchange: function (event) {},
+			oncheck: function (event) { $(allOptionContents).slideDown(); },
+			onuncheck: function (event) { $(allOptionContents).slideUp(); }
+		}
+	);
+
+
+
+
+
+	var adStatus = document.querySelector('#ad-status');
+	console.warn('Test codes here. Please fetch real data by AJAX');
+	thisApp.updateAdStatus(adStatus, 2);
+	// $.json('http://lly.com/abc.json')
+	// 	.success(function (data) {
+	// 		var status = data.status;
+	// 		updateAdStatus(adStatus, status);
+	// 	})
+	// ;
+})();
+
+
+(function () { // page-text-ad-list
+	var thisPage = document.querySelector('*[data-url="page-my-booth-text-ad-list"]');
+
+
+
+	var helpButton = thisPage.querySelector('.help-link');
+	var helpImagesRoot = thisPage.querySelector('.help-images');
+	var helpImages = Array.prototype.slice.apply(thisPage.querySelectorAll('.help-images i'));
+
+	helpButton.addEventListener('click', function (event) { helpImagesRoot.style.display = 'block'; });
+	helpImages.forEach(function (h, i, helpImages) {
+		h.addEventListener('click', function (event) { helpImagesRoot.style.display = ''; });
+	});
+
+
+
+
+	var buttonSection = thisPage.querySelector('section.button');
+	var adListContainer = document.querySelector('.ads-list .scroller');
+	var ads = Array.prototype.slice.apply(document.querySelectorAll('section.ad'));
+	var listMaxHeightEffectors = [
+		'body > header',
+		'section.message',
+		'section.button'
+	];
+
+
+	// test: try to delete all hard-coded elements and show tooltip
+	// var _a = ads.slice(); _a.forEach(function(e, i) {e.parentNode.removeChild(e); ads.splice(0,1); });
+
+
+	window.addEventListener('resize', decideListContainerMaxHeight);
+	window.setTimeout(decideListContainerMaxHeight, 1);
+	tryShowTooltip();
+
+	function tryShowTooltip() { thisApp.tryShowButtonSectionTooltip(buttonSection, ads.length <= 0); }
+	function decideListContainerMaxHeight() { thisApp.setMaxHeight(adListContainer, listMaxHeightEffectors); }
+})();
+
+
+(function () { // page-text-ad-create
+	var thisPage = document.querySelector('*[data-url="page-my-booth-text-ad-create"]');
+})();
+
+
+(function () { // page-rich-ad
+	var thisPage = document.querySelector('*[data-url="page-my-booth-rich-ad-list"]');
+
+
+
+	var helpButton = thisPage.querySelector('.help-link');
+	var helpImagesRoot = thisPage.querySelector('.help-images');
+	var helpImages = Array.prototype.slice.apply(thisPage.querySelectorAll('.help-images i'));
+
+	helpButton.addEventListener('click', function (event) { helpImagesRoot.style.display = 'block'; });
+	helpImages.forEach(function (h, i, helpImages) {
+		h.addEventListener('click', function (event) { helpImagesRoot.style.display = ''; });
+	});
+
+
+
+
+	var buttonSection = thisPage.querySelector('section.button');
+	var adListContainer = document.querySelector('.ads-list .scroller');
+	var ads = Array.prototype.slice.apply(document.querySelectorAll('section.ad'));
+	var listMaxHeightEffectors = [
+		'body > header',
+		'section.message',
+		'section.button'
+	];
+
+
+	// test: try to delete all hard-coded elements and show tooltip
+	// var _a = ads.slice(); _a.forEach(function(e, i) {e.parentNode.removeChild(e); ads.splice(0,1); });
+
+
+	window.addEventListener('resize', decideListContainerMaxHeight);
+	window.setTimeout(decideListContainerMaxHeight, 1);
+	tryShowTooltip();
+
+	function tryShowTooltip() { thisApp.tryShowButtonSectionTooltip(buttonSection, ads.length <= 0); }
+	function decideListContainerMaxHeight() { thisApp.setMaxHeight(adListContainer, listMaxHeightEffectors); }
+})();
+
+(function () {
+	var thisPage = document.querySelector('*[data-url="page-my-booth-rich-ad-create"]');
+})();
+
+
+(function () { // page-private-ad
+	var thisPage = document.querySelector('*[data-url="page-my-booth-private-ad-list"]');
+	var buttonSection = thisPage.querySelector('section.button');
+	var adListContainer = document.querySelector('.ads-list .scroller');
+	var ads = Array.prototype.slice.apply(document.querySelectorAll('section.ad'));
+	var listMaxHeightEffectors = [
+		'body > header',
+		'section.message',
+		'section.button'
+	];
+
+
+	// test: try to delete all hard-coded elements and show tooltip
+	// var _a = ads.slice(); _a.forEach(function(e, i) {e.parentNode.removeChild(e); ads.splice(0,1); });
+
+
+	window.addEventListener('resize', decideListContainerMaxHeight);
+	window.setTimeout(decideListContainerMaxHeight, 1);
+	tryShowTooltip();
+
+	function tryShowTooltip() { thisApp.tryShowButtonSectionTooltip(buttonSection, ads.length <= 0); }
+	function decideListContainerMaxHeight() { thisApp.setMaxHeight(adListContainer, listMaxHeightEffectors); }
+})();
+
+(function () {
+	var thisPage = document.querySelector('*[data-url="page-my-booth-private-ad-create"]');
 })();
 
 
 
 
 
-function CreateLLYPagesController (initOptions) {
-	var _thisPageController = {
-		pages: [],
-		currentPage: undefined,
-		styleElement: undefined,
-
-		swipeTo: function (targetPage) { _swipeTo.call(this, targetPage); },
-		onwipestart: undefined,
-		onwipeend: undefined
-	}
-
-	return (function () {
-		if (!_init.call(this)) return undefined;
-		if (!_config.call(this, initOptions)) return undefined;
-		return this;
-	}).call(_thisPageController);
-
-	function _init () {
-		var _ok = true;
-		this.styleElement = document.createElement('style');
-		document.head.appendChild(this.styleElement);
-		return _ok;
-	}
-
-	function _config(options) {
-		var _ok = true;
-
-		options = options || {};
-
-		if (options.hasOwnProperty('onwipestart') && typeof options.onwipestart === 'function') {
-			this.onwipestart = options.onwipestart;
-		}
-
-		if (options.hasOwnProperty('onwipeend') && typeof options.onwipeend === 'function') {
-			this.onwipeend = options.onwipeend;
-		}
-
-		if (options.hasOwnProperty('pages') && Array.isArray(options.pages)) {
-			this.pages = this.pages.concate(options.pages);
-			console.warn('may has duplicated array elements');
-		}
-
-		return _ok;
-	}
-
-}; // Factory:CreateLLYPagesController
 
 
 function CreateLLyGraphPieController(rootElement, initOptions) {
