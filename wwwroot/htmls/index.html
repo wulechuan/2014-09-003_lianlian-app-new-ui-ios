@@ -13,6 +13,11 @@
 <body>
 	<header></header>
 
+	<div style="z-index: 200; position: fixed; background-color: pink; text-align: center; bottom: 0; width: 100%;">
+		<a href="#page-my-booth-promo-link">test-link-1</a>
+		<a href="#page-footprint-create">test-link-2</a>
+	</div>
+
 	<main>
 		<div lly-page data-url="page-index">
 			<section class="statistics">
@@ -567,7 +572,7 @@
 				<article><p>开启推广链接，联连用户通过<em>商户主页</em>可跳转到您设置的营销网页。</p></article>
 			</section>
 
-			<section option-content>
+			<section optional-content>
 				<div class="rows">
 					<div class="row">
 						<input type="url" name="promotion-link-url" id="promotion-link-url" value="http://" />
@@ -580,11 +585,11 @@
 				<article><p>每月只允许修改<em>1</em>次。</p></article>
 			</section>
 
-			<section  option-content class="message">
+			<section optional-content class="message">
 				<article><button class="help-link">点击查看帮助</button></article>
 			</section>
 
-			<section  option-content class="button" style="padding-top: 0;">
+			<section optional-content class="button" style="padding-top: 0;">
 				<article>
 					<button>保存</button>
 					<button class="cancel">取消</button>
@@ -851,6 +856,28 @@
 					<div class="row menu wifi-type"><span>sh-wifi</span><span class="rightside">公共热点</span></div>
 					<div class="row menu wifi-type"><span>世纪联华-花木路店</span><span class="rightside">其他</span></div>
 				</div>
+			</section>
+		</div>
+
+		<div lly-page data-url="page-footprint-create">
+			<section>
+				<div class="rows" video-description>
+					<img src="" />
+					<textarea placeholder="您可在此输入视频描述。您亦可直接发布该视频。"></textarea>
+				</div>
+				<!-- <article><p></p></article> -->
+			</section>
+
+			<section>
+				<div class="rows">
+					<div class="row">
+						<label for="burn-after-reading">阅后即焚</label>
+						<span class="rightside" id="pretty-checkbox-burn-after-reading">
+							<input type="checkbox" name="burn-after-reading" id="burn-after-reading" />
+						</span>
+					</div>
+				</div>
+				<!-- <article><p></p></article> -->
 			</section>
 		</div>
 	</main>

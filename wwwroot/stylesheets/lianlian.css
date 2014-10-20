@@ -2356,3 +2356,29 @@ section.ad {
 		}
 
 
+
+*[data-url="page-footprint-create"] {
+	}
+
+	*[data-url="page-footprint-create"] *[video-description] {
+		padding-top: .75rem;
+		padding-bottom: 0.75rem;
+	}
+
+	*[data-url="page-footprint-create"] *[video-description] img {
+		position: absolute;
+		width: 4rem;
+		height: 4rem;
+		margin: 0;
+		top: 0.75rem;
+		right: 0.75rem;
+		border: 0px none transparent;
+	}
+
+	*[data-url="page-footprint-create"] *[video-description] textarea {
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-right: 5.5rem;
+		min-height: 4rem;
+	}
+

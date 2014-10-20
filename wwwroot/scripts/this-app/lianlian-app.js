@@ -209,22 +209,22 @@ var e = console.error.bind(console);
 
 
 
-	var allOptionContents = Array.prototype.slice.apply(document.querySelectorAll('*[option-content]'));
+	var allOptionalContents = Array.prototype.slice.apply(document.querySelectorAll('*[optional-content]'));
 	var prettyCheckboxController = CreateLLYPrettyCheckboxController(
 		document.querySelector('#pretty-checkbox-promotion-link'),
 		{
 			// checked: true,
 			onchange: function (event) {},
-			oncheck: function (event) { $(allOptionContents).slideDown(); },
-			onuncheck: function (event) { $(allOptionContents).slideUp(); }
+			oncheck: function (event) { $(allOptionalContents).slideDown(); },
+			onuncheck: function (event) { $(allOptionalContents).slideUp(); }
 		}
 	);
 
 
 
-
-
 	var adStatus = document.querySelector('#ad-status');
+
+
 	console.warn('Test codes here. Please fetch real data by AJAX');
 	thisApp.updateAdStatus(adStatus, 2);
 	// $.json('http://lly.com/abc.json')
@@ -351,6 +351,38 @@ var e = console.error.bind(console);
 
 (function () {
 	var thisPage = document.querySelector('*[data-url="page-my-booth-private-ad-create"]');
+})();
+
+
+
+(function () { // page-footprint-create
+	var thisPage = document.querySelector('*[data-url="page-footprint-create"]');
+
+
+	var allOptionalContents = Array.prototype.slice.apply(document.querySelectorAll('*[optional-content]'));
+	var prettyCheckboxController = CreateLLYPrettyCheckboxController(
+		document.querySelector('#pretty-checkbox-burn-after-reading'),
+		{
+			checked: true,
+			onchange: function (event) {},
+			oncheck: function (event) {},
+			onuncheck: function (event) {}
+		}
+	);
+
+
+
+	var adStatus = document.querySelector('#ad-status');
+
+
+	console.warn('Test codes here. Please fetch real data by AJAX');
+	thisApp.updateAdStatus(adStatus, 2);
+	// $.json('http://lly.com/abc.json')
+	// 	.success(function (data) {
+	// 		var status = data.status;
+	// 		updateAdStatus(adStatus, status);
+	// 	})
+	// ;
 })();
 
 
