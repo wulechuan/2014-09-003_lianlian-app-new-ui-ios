@@ -1,32 +1,6 @@
-var l = console.log.bind(console);
-var w = console.warn.bind(console);
-var e = console.error.bind(console);
-
-(function () { // fake header
-	var _fakeHeader = document.querySelector('body > header');
-
-	if (false) {
-		if (_fakeHeader) {
-			_fakeHeader.addEventListener('click', function() {
-				window.location.assign('my-booth--index.html');
-			});
-		}
-	} else {
-		document.body.removeChild(_fakeHeader);
-		delete _fakeHeader;
-	}
-})();
-
-(function () { // processAll pages
-	$('*[lly-page]').each(function (i) {
-		this.setAttribute('data-role', 'page');
-	});
-
-	// $('a').each(function (i) {
-	// 	this.setAttribute('data-transition', 'slide');
-	// });
-	$.mobile.defaultPageTransition = 'slide';
-})();
+window.l = console.log.bind(console);
+window.w = console.warn.bind(console);
+window.e = console.error.bind(console);
 
 (function () {
 	function uaHas(inString)          { return navigator.userAgent.search(inString) >= 0; }
@@ -35,10 +9,26 @@ var e = console.error.bind(console);
 	function platformHasNot(inString) { return navigator.platform.search(inString)  <  0; }
 
 	window.thisApp = {
+		header: {
+			element: null,
+			backButton: null,
+			pageTitle: null,
+			updatePageTitleForPage: function (jQMPage) {
+				this.pageTitle.innerText = jQMPage[0].dataset.pageTitle;
+			}
+		},
+
 		env: {
 			os: {
 				ios: uaHas('like Mac OS X') && platformHasNot('Win32'),
 				android: uaHas('Android') || platformHas('Linux arm')
+			}
+		},
+
+		nav: {
+			navigatedHandler: function (event, ui) {
+				window.l('nav.navigatedHandler();\n\tui:', ui);
+				window.thisApp.header.updatePageTitleForPage(ui.toPage);
 			}
 		},
 
@@ -63,12 +53,10 @@ var e = console.error.bind(console);
 			if (_maxHeight > 0) element.style.maxHeight = _maxHeight + 'px';
 		},
 
-
 		tryShowButtonSectionTooltip: function (buttonSection, toShowTooltip) {
 			buttonSection.style.paddingTop = toShowTooltip ? '0px' : '';
 			buttonSection.querySelector('.tooltip').style.display = toShowTooltip ? '' : 'none';
 		},
-
 
 		updateAdStatus: function (element, status) {
 			// status:
@@ -90,6 +78,24 @@ var e = console.error.bind(console);
 			if (_attr) element.setAttribute('ad-status', _attr);
 		}
 	};
+})();
+
+(function () { // header
+	window.thisApp.header.element = document.querySelector('body > header');
+	window.thisApp.header.pageTitle = window.thisApp.header.element.querySelector('h1');
+})();
+
+(function () { // pages
+	var $allPages = $('*[lly-page]');
+	var $initPage = $($allPages[0]);
+	window.thisApp.header.updatePageTitleForPage($initPage);
+	// $allPages.on('pagecontainerchange', function (e) { l('changing shit', this); });
+	$allPages
+		.pagecontainer({ change: window.thisApp.nav.navigatedHandler })
+		.each(function (i) { this.setAttribute('data-role', 'page'); })
+	;
+
+	$.mobile.defaultPageTransition = 'slide';
 })();
 
 (function () { // page-my-booth-create

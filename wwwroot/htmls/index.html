@@ -11,15 +11,10 @@
 </head>
 
 <body>
-	<header></header>
-
-	<div style="z-index: 200; position: fixed; background-color: pink; text-align: center; bottom: 0; width: 100%;">
-		<a href="#page-my-booth-promo-link">test-link-1</a>
-		<a href="#page-footprint-create">test-link-2</a>
-	</div>
+	<header data-role="header"><a id="nav-back-button" data-rel="back"></a><h1>page title</h1></header>
 
 	<main>
-		<div lly-page data-url="page-index">
+		<div lly-page data-page-title="管理我的商家" data-url="page-index">
 			<section class="statistics">
 				<div class="rows">
 					<div class="row taller dual-columns">
@@ -73,7 +68,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-info">
+		<div lly-page data-page-title="我的商家信息" data-url="page-my-booth-info">
 			<section class="margin-top">
 				<div class="rows">
 					<div class="row">
@@ -116,7 +111,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-create-step-1">
+		<div lly-page data-page-title="填写商户信息" data-url="page-my-booth-create-step-1">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li progress-step="current"></li>
@@ -183,7 +178,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-create-step-2">
+		<div lly-page data-page-title="填写联系方式" data-url="page-my-booth-create-step-2">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -226,7 +221,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-create-step-3">
+		<div lly-page data-page-title="提交资质证明" data-url="page-my-booth-create-step-3">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -286,7 +281,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-create-step-4-ios">
+		<div lly-page data-page-title="提交商户Wi-Fi信息" data-url="page-my-booth-create-step-4-ios">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -315,7 +310,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-create-step-4-android">
+		<div lly-page data-page-title="提交商户Wi-Fi信息" data-url="page-my-booth-create-step-4-android">
 			<section class="progress">
 				<ol progress-steps="4">
 					<li></li>
@@ -344,7 +339,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-owner-verify-step-1">
+		<div lly-page data-page-title="验证身份" data-url="page-my-booth-owner-verify-step-1">
 			<section class="progress">
 				<ol progress-steps="2">
 					<li progress-step="current"></li>
@@ -371,7 +366,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-owner-verify-step-2">
+		<div lly-page data-page-title="更改管理号码" data-url="page-my-booth-owner-verify-step-2">
 			<section class="progress">
 				<ol progress-steps="2">
 					<li></li>
@@ -398,7 +393,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-statistics">
+		<div lly-page data-page-title="商家数据" data-url="page-my-booth-statistics">
 			<section style="margin-bottom: 0;">
 				<div class="rows">
 					<a href="my-booth-customers-visitors.html" class="row taller menu">
@@ -454,7 +449,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-customers-visitors">
+		<div lly-page data-page-title="访客列表" data-url="page-customers-visitors">
 			<section>
 				<div class="rows">
 					<div class="row customer-info">
@@ -489,7 +484,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-customers-fans">
+		<div lly-page data-page-title="收藏我的用户" data-url="page-customers-fans">
 			<section>
 				<div class="rows">
 					<div class="row customer-info">
@@ -524,7 +519,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-customers-messages">
+		<div lly-page data-page-title="客户留言" data-url="page-customers-messages">
 			<section>
 				<div class="rows">
 					<div class="row customer-msg">
@@ -559,7 +554,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-promo-link">
+		<div lly-page data-page-title="推广链接" data-url="page-my-booth-promo-link">
 			<section>
 				<div class="rows">
 					<div class="row">
@@ -597,7 +592,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-text-ad-list">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-text-ad-list">
 			<section class="message">
 				<article><button class="help-link">点击查看帮助</button></article>
 			</section>
@@ -644,7 +639,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-text-ad-create">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-text-ad-create">
 			<section>
 				<div class="rows">
 					<textarea placeholder="请输入您的号外广告正文"></textarea>
@@ -661,7 +656,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-rich-ad-list">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-rich-ad-list">
 			<section class="message">
 				<article><button class="help-link">点击查看帮助</button></article>
 			</section>
@@ -709,7 +704,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-rich-ad-create">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-rich-ad-create">
 			<section>
 				<div class="rows">
 					<div class="row" style="margin-left: 0; padding-left: 1em;"><input required placeholder="标题" /></div>
@@ -740,7 +735,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-private-ad-list">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-private-ad-list">
 			<section class="message">
 				<article><p>你本月还能群发<em>2</em>条消息，为了保证正常发送，请你 确保有足够的群发数量。</p></article>
 			</section>
@@ -792,7 +787,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-my-booth-private-ad-create">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-my-booth-private-ad-create">
 			<section>
 				<div class="rows">
 					<textarea placeholder="请输入您的促销信息"></textarea>
@@ -816,7 +811,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-wifi-hot-spot-add-edit">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-wifi-hot-spot-add-edit">
 			<section class="margin-top">
 				<div class="rows">
 					<div class="row required has-button">
@@ -836,7 +831,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-wifi-hot-spots-list-choose">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-wifi-hot-spots-list-choose">
 			<section>
 				<div class="rows">
 					<div class="row wifi-spot">luluyou</div>
@@ -847,7 +842,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-wifi-hot-spots-list-cloud-backup">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-wifi-hot-spots-list-cloud-backup">
 			<section>
 				<div class="rows">
 					<div class="row menu wifi-type"><span>wlc-wifi</span><span class="rightside">家庭热点</span></div>
@@ -859,7 +854,7 @@
 			</section>
 		</div>
 
-		<div lly-page data-url="page-footprint-create">
+		<div lly-page data-page-title="the real tile goes here" data-url="page-footprint-create">
 			<section>
 				<div class="rows" video-description>
 					<img src="" />
@@ -883,7 +878,7 @@
 	</main>
 
 	<section id="popup-layers">
-		<section id="booth-categories-selector" class="booth-categories-selector" popup-window style="display: none;">
+		<section id="abcdefg" class="abcdefg" popup-window style="display: none;">
 			<header><h1>友情提示</h1></header>
 			<section class="body">
 				<article>

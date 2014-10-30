@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"lo",
+				"locationSelectorLevel1"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
 				"hr",
 				"hrefBackup"
 			],
@@ -106,10 +130,6 @@
 			[
 				"border-r",
 				"border-radius"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"border-lef",
@@ -224,10 +244,6 @@
 				"hasOwnProperty"
 			],
 			[
-				"s",
-				"startAngle"
-			],
-			[
 				"up",
 				"_updateByAngles"
 			],
@@ -308,24 +324,12 @@
 				"myBoothCategoryRow"
 			],
 			[
-				"h",
-				"href	Attr"
-			],
-			[
-				"bor",
-				"border-box"
-			],
-			[
 				"t",
 				"text-align"
 			],
 			[
 				"tra",
 				"transparent"
-			],
-			[
-				"trans",
-				"translateY"
 			],
 			[
 				"ba",
@@ -510,28 +514,24 @@
 			[
 				"ac",
 				"actuallyAnimatedElement"
-			],
-			[
-				"ononeanimt",
-				"onOneActionComplete"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "wwwroot/htmls/index.html",
+			"file": "wwwroot/htmls/sel-test.html",
 			"settings":
 			{
-				"buffer_size": 28211,
+				"buffer_size": 1950,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wwwroot/scripts/this-app/lianlian-app.js",
+			"file": "wwwroot/scripts/this-app/lianlian-app-test-modules.js",
 			"settings":
 			{
-				"buffer_size": 20748,
+				"buffer_size": 2848,
 				"line_ending": "Windows"
 			}
 		}
@@ -591,6 +591,15 @@
 	],
 	"file_history":
 	[
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/index.html",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/vendors/lly-website.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/vendors/lly-js.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/vendors/lly-animation-toolkits.js",
+		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian.css",
+		"/D/Users/lechuan/Desktop/定义rem大小.js",
+		"/D/p/LLY_local/2014-07-001_treatures_chest/wwwroot/Static/script/lottery.js",
+		"/D/Users/lechuan/Desktop/定义rem大小",
 		"/D/Users/lechuan/Desktop/wlc/GitHub/wlcJS/wwwroot/scripts/wlcjs/wlc-js.js",
 		"/D/Users/lechuan/Desktop/wlc/GitHub/wlcJS/wwwroot/scripts/wlcjs/wlc-website.js",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth--index.html",
@@ -599,8 +608,6 @@
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/v6.html",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/v6.html.cpp",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/v5.html.cpp",
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/stylesheets/lianlian.css",
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/scripts/this-app/lianlian-app.js",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/app-ad-clicked-v4.html.cpp",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/app-ad-clicked-v4.html",
 		"/D/p/LLY_local/2014-09-001_app-ad-image-click-action/2014-09-001_app-ad-image-click-action/wwwroot/app-ad-clicked-v2-zougang.html",
@@ -649,7 +656,6 @@
 		"/D/Users/lechuan/Desktop/Give your inbox a personality with Advanced Rules in Outlook.com - Office Blogs.url",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/my-booth-verifying.html",
 		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/t.html",
-		"/D/p/LLY_local/2014-09-003_lianlian-app-new-ui-ios/2014-09-003_lianlian-app-new-ui-ios/wwwroot/htmls/index.html",
 		"/D/Users/lechuan/Desktop/ffmpeg-mux(copy)-m4v-and-m4a.bat",
 		"/D/Users/lechuan/Desktop/wlc/GitHub/wlcJS/wwwroot/scripts/_tools/bat/wlc-copy-files - _core.bat",
 		"/D/Users/lechuan/Desktop/ffmpeg.bat",
@@ -712,13 +718,7 @@
 		"/D/github/2014-08-003_zhonglu-website/wwwroot/scripts/zhonglu-capital-website.js",
 		"/D/github/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website.sublime-project",
 		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/snippets/footer-default.html",
-		"/D/Users/lechuan/Desktop/wlc/OneDrive/renderers.txt",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/scripts/zhonglu-capital.js",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/snippets/header-default.html",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/__template.html",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website.sublime-project",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/account-details.html",
-		"/D/p/LLY_local/2014-08-003_zhonglu-website/2014-08-003_zhonglu-website/wwwroot/htmls/account-edit-company.html"
+		"/D/Users/lechuan/Desktop/wlc/OneDrive/renderers.txt"
 	],
 	"find":
 	{
@@ -747,6 +747,39 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_thisPieGraph",
+			"onupdate",
+			"startAngle",
+			"endAngle",
+			"initIndex",
+			"startAngle",
+			"options",
+			"onupdate",
+			"2",
+			"1",
+			"2",
+			"1",
+			"CreateLLyGraphPieController",
+			"booth-categories-selector",
+			"1.5",
+			"*[page-",
+			"#page-footprint-create",
+			"80px",
+			"my-booth-statistics",
+			"	#page-my-booth-statistics .graph-columns-block {\n		position: relative;\n		background-color: #ededed;\n		border-top: 1px solid #e3e4e8;\n		}\n\n		#page-my-booth-statistics .graph-columns-block .switcher {\n			display: block;\n			position: absolute;\n			right: 1em;\n			top: 1em;\n		}\n\n		#page-my-booth-statistics .graph-columns-block .graph-columns {\n			display: block;\n			width: 100%;\n			margin: 0;\n			padding-top: 4em;\n		}\n\n		#page-my-booth-statistics .graph-columns-block .graph-columns canvas {\n			display: block;\n			width: 100%;\n			height: 8rem;\n		}\n\n		#page-my-booth-statistics .graph-columns-block .graph-columns#graph-columns-workdays canvas {\n			background-color: pink;\n		}\n		#page-my-booth-statistics .graph-columns-block .graph-columns#graph-columns-weekends canvas {\n			background-color: lightgreen;\n		}\n\n\n",
+			"CreateLLYPrettyCheckboxController",
+			"prett",
+			"page-my-booth-private-ad-create",
+			"allOptionContents",
+			"Content",
+			"content",
+			"-content]",
+			"allOptionContents",
+			"option-content",
+			"option-content ",
+			"option-content",
+			"promotion-link-switch",
+			"checkbox",
 			"CreateLLYPagesController",
 			"llyPagesController.",
 			"LLYPagesController",
@@ -841,40 +874,7 @@
 			"_buttonSection",
 			"id=\"js",
 			"decideAdsListContainerMaxHeight",
-			"SubtractSelectors",
-			"listMaxHeightSubtractSelectors",
-			"argument",
-			"lly-page-visibility",
-			"button",
-			"real",
-			"text",
-			"argument",
-			"columns",
-			"graphs",
-			"my-booth-statistics-graph-pie-data-male",
-			"my-booth-statistics-graph-pie-male",
-			"id=\"graph-pie-",
-			"graph-pie-male",
-			"#graph-pie-",
-			"graph-pie-",
-			"#graph-pie-",
-			"graph-pie-male",
-			"graph-pie-data-",
-			"graph-pie-data-female",
-			"argument",
-			"function_name",
-			"dataElement",
-			"onwipestart",
-			"onupdate",
-			"_ok = ",
-			"switchTo",
-			"undefined",
-			"styleElement",
-			"undefined",
-			"_thisPieGraph",
-			"my-booth-category",
-			"my-booth-category-row",
-			"#my-booth-category-row"
+			"SubtractSelectors"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -918,19 +918,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "wwwroot/htmls/index.html",
+					"file": "wwwroot/htmls/sel-test.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28211,
+						"buffer_size": 1950,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28167,
-								28175
+								1573,
+								1585
 							]
 						],
 						"settings":
@@ -939,7 +939,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 17740.0,
+						"translation.y": 792.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -947,19 +947,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "wwwroot/scripts/this-app/lianlian-app.js",
+					"file": "wwwroot/scripts/this-app/lianlian-app-test-modules.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20748,
+						"buffer_size": 2848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3301,
-								3301
+								737,
+								737
 							]
 						],
 						"settings":
@@ -968,7 +968,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 66.0,
+						"translation.y": 198.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

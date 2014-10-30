@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>连联wifi商家管理</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="../stylesheets/jquery.mobile.custom.structure.min.css"/>
+	<link rel="stylesheet" href="../stylesheets/lianlian.css"/>
+	<script src="../scripts/vendors/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/vendors/jquery.mobile.custom.min.js"></script>
+	<script src="../scripts/vendors/lly-js.js"></script>
+	<script src="../scripts/vendors/lly-website.js"></script>
+	<script src="../scripts/vendors/lly-animation-toolkits.js"></script>
+</head>
+
+<body>
+	<header></header>
+
+	<main>
+		<div lly-page data-url="page-index">
+			<section>
+				<div class="rows">
+					<a href="#page-my-booth-info" class="row menu"><i icon-face="booth"></i>我的商家信息</a>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<section id="popup-layers">
+		<section id="booth-location-selector" class="booth-location-selector" popup-window style="display:none;">
+			<select name="booth-location-level1" lly-selector id="boot-location-level1">
+				<option>北京市</option>
+				<option>上海市</option>
+				<option>天津市</option>
+				<option>重庆市</option>
+				<option>江西省</option>
+			</select>
+
+			<select name="booth-location-level2" lly-selector id="boot-location-level2">
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+			</select>
+
+			<select name="booth-location-level3" lly-selector id="boot-location-level3">
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+				<option>数据待定</option>
+			</select>
+		</section>
+	</section>
+
+	<script src="../scripts/this-app/lianlian-app-test-modules.js"></script>
+</body>
+</html>
